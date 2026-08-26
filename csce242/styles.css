@@ -27,11 +27,17 @@ header {
     padding:20px;
     text-align: center;
 }
+a {
+    margin-top: 10px;
+}
 
 
 /* Navigation */
 ol {
     list-style-position:inside;
+    display: inline-block;
+    text-align: left;
+    margin-top: 2px;
 }
 a {
     text-decoration: none; /* get rid of the lines */
@@ -48,5 +54,12 @@ h2 {
 
 #assignments 
 a {
+    margin:auto;
     color:#C3C2F2;
+}
+
+#Projects
+h2 {
+    margin: top 10px;
+    padding-left: 10px;
 }
