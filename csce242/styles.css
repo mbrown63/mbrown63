@@ -1,6 +1,6 @@
 /* Structural */
 body {
-    font-family:'script bold italic';
+    font-family:'script bold italic', Georgia, Times, serif;
     background: url("images/Bright sunrise.jpg");
     background-size: cover;
     align-items: center;
@@ -41,4 +41,12 @@ a {
 /* Typography */
 h1 {
     color:white;
+}
+h2 {
+    color:#F2CF63;
+}
+
+#assignments 
+a {
+    color:#C3C2F2;
 }
