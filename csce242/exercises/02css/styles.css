@@ -14,10 +14,20 @@ body {
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
 }
 
+header, main,footer {
+    padding:5px;
+}
+
+header, footer {
+    background:#30728C;
+    color: white;
+}
+
+
 /* Navigation */
 
 
 /* Typography */
 h1 {
-    color:green;
+    color:white;
 }

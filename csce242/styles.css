@@ -1,0 +1,44 @@
+/* Structural */
+body {
+    font-family:'script bold italic';
+    background: url("images/Bright sunrise.jpg");
+    background-size: cover;
+    align-items: center;
+}
+
+#content {
+    background-color: rgba(242, 61, 61, 0.65);
+    width:45%;
+    padding:2px;
+    margin:auto;    /* centers in the page */
+    border-radius:5px;
+    box-shadow: 0px 0px 10px 5px #F2CF63;
+    text-align: center;
+}
+
+header, main,footer {
+    padding:5px;
+    color:#F2CF63;
+    text-align: center;
+}
+
+header {
+    color: #F2CF63;
+    padding:20px;
+    text-align: center;
+}
+
+
+/* Navigation */
+ol {
+    list-style-position:inside;
+}
+a {
+    text-decoration: none; /* get rid of the lines */
+    color: #C3C2F2;
+}
+
+/* Typography */
+h1 {
+    color:white;
+}
