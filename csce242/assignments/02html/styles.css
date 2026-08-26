@@ -32,7 +32,12 @@ main {
     text-align: center;
 }
 p {
-    color:#332820
+    color:#815434
+}
+img {
+    border-radius:5px;
+    box-shadow: 0px 0px 10px 5px #3C8D8D;
+    padding: 2%;
 }
 
 footer {
@@ -65,15 +70,15 @@ a {
 
 /* Typography */
 h1 {
-    color:white;
+    color:#264D3B;
 }
 h2 {
-    color:#F2CF63;
+    color:#C96A3D;
 }
 
-/* Trable */
+/* Table */
 tr {
     padding:5px;
-    color:#F2CF63;
+    color:#0b6023;
     text-align: center;
 }
