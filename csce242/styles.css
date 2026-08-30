@@ -55,9 +55,21 @@ h2 {
 #assignments a {
     margin:auto;
     color:#C3C2F2;
+    display: flex;
+    gap: 20px;
+}
+
+assignment li {
+    flex:1;
 }
 
 #projects {
     margin-top: 10px;
     padding-left: 10px;
+}
+
+@media (max-width:700px) {
+    #assignments {
+        flex-direction: column;
+    }
 }
