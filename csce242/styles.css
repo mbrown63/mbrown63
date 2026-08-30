@@ -1,75 +1,109 @@
-/* Structural */
+/* Structure */
 body {
-    font-family:'script bold italic', Georgia, Times, serif;
-    background: url("images/Bright sunrise.jpg");
-    background-size: cover;
-    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0F3D59;
 }
 
 #content {
-    background-color: rgba(242, 61, 61, 0.65);
-    width:45%;
-    padding:2px;
-    margin:auto;    /* centers in the page */
-    border-radius:5px;
-    box-shadow: 0px 0px 10px 5px #F2CF63;
+    width: 80%;
+    margin: auto;
+}
+
+#main-header {
+    background-color: #730E3D;
+    padding: 5px;
     text-align: center;
 }
 
-header, main, footer {
-    padding:5px;
-    color:#F2CF63;
+main {
+    background-color: #F2E8CF;
+    padding: 5px;
     text-align: center;
 }
 
-header {
-    color: #F2CF63;
-    padding:20px;
+footer {
+    background-color: #730E3D;
+    color: white;
+    padding: 5px;
     text-align: center;
 }
-a {
-    margin-top: 10px;
+
+/* Assignments and Projects */
+.columns {
+    display: flex;
+    gap: 25px;
 }
 
-
-/* Navigation */
-ol {
-    list-style-position:inside;
-    display: inline-block;
-    text-align: left;
-    margin-top: 2px;
+.one {
+    flex: 1;
+    background-color: #F2BA52;
+    padding: 15px;
+    width: 300px;
+    text-align: auto;
+    margin: auto;
 }
-a {
-    text-decoration: none; /* get rid of the lines */
-    color: #C3C2F2;
+
+/* Images */
+.one img {
+    width: 300px;
+    height: 150px;
+    display: block;
+    margin: auto;
 }
 
 /* Typography */
-h1 {
-    color:white;
-}
-h2 {
-    color:#F2CF63;
-}
-
-#assignments a {
-    margin:auto;
-    color:#C3C2F2;
-    display: flex;
-    gap: 20px;
+#main-header h1 {
+    text-align: center;
+    padding-top: 15px;
+    color: white;
 }
 
-assignment li {
-    flex:1;
+#main-header h2 {
+    text-align: center;
+    color: #F2BA52;
 }
 
-#projects {
-    margin-top: 10px;
-    padding-left: 10px;
+#main-header p {
+    color: white;
+    text-align: center;
 }
 
-@media (max-width:700px) {
-    #assignments {
+main > h2 {
+    text-align: center;
+    color: #730E3D;
+}
+
+.one h3 {
+    color: #730E3D;
+}
+
+.one p {
+    color: #730E3D;
+}
+
+
+/* Links */
+a {
+    color: #730E3D;
+    text-decoration: none;
+}
+
+#main-header a {
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1099px) {
+
+    .columns {
         flex-direction: column;
     }
+
+    .one {
+        width: 300px;
+        
+    }
+
 }
