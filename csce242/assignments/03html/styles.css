@@ -15,15 +15,16 @@ body {
 /* Header */
  
 header {
-    background-color: #730E3D;
     padding: 25px;
     text-align: center;
+    padding-bottom: 0%;
 }
 
 header h1 {
     margin: 0;
     color: white;
     font-size: 45px;
+    padding-bottom: 3%;
 }
 
 /* Navigation */
@@ -75,8 +76,7 @@ nav a:hover {
 #sidebar h2 {
     margin: 0;
     padding: 15px;
-    background-color: #F2620F;
-    color: white;
+    color: #F2620F;
     text-align: center;
 }
 
@@ -84,12 +84,12 @@ nav a:hover {
     list-style-type: none;
     padding: 0%;
     width: 95%;
-    margin: auto;
+    margin: 0 auto 10px auto;
 }
 
 #sidebar li { 
     background-color: white;
-    border-bottom: 1px solid pink;
+    border-bottom: 1px solid #F2BA52;
     padding: 5px;
     text-align: center;
 }
@@ -190,6 +190,7 @@ footer {
     .four {
         width:100%;
         align-self: flex-start;
+        padding-bottom: 10px;
     }
 
     .four img {
