@@ -1,0 +1,203 @@
+/* General */
+
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0F3D59;
+}
+
+#content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+ 
+header {
+    background-color: #730E3D;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 45px;
+}
+
+/* Navigation */
+
+nav {
+    background-color:#F2620F;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    flex: 1;
+    background-color: #F2620F;
+    border: 1px solid #f2e8cf;
+}
+
+nav a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #F2BA52;
+}
+
+/* Main */
+.columns {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Sidebar */
+
+#sidebar {
+    flex: 0.8;
+    background-color: #f2e8cf;
+    padding-bottom: 10px;
+}
+
+#sidebar h2 {
+    margin: 0;
+    padding: 15px;
+    background-color: #F2620F;
+    color: white;
+    text-align: center;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0%;
+    width: 95%;
+    margin: auto;
+}
+
+#sidebar li { 
+    background-color: white;
+    border-bottom: 1px solid pink;
+    padding: 5px;
+    text-align: center;
+}
+
+#sidebar a {
+    color: #F2BA52;
+    text-decoration: none;
+}
+
+#quick link {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#quick link li {
+    padding: 12px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Title boxes */
+
+.four {
+    flex: 1;
+    background-color: #730E3D;
+}
+
+.four h2 {
+    margin: 0;
+    padding: 12px;
+    background-color: #F2620F;
+    color: white;
+    text-align: center;
+}
+
+.four img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Idea */
+
+.idea {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.idea > img {
+    width: 190px;
+    object-fit: cover;
+}
+
+.idea article {
+    flex: 1;
+    padding: 20px;
+    background-color: #730E3D;
+    color: white;
+}
+
+.idea article h2 {
+    margin-top: 0;
+}
+
+.idea article p {
+    line-height: 1.5;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 10px;
+    padding: 25px;
+    background-color: #F2620F;
+    color: white;
+    text-align: center;
+}
+
+/* Smalls Screens */
+
+@media (max-width: 1000px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .columns { 
+        flex-direction: column;
+    }
+
+    .idea {
+        flex-direction: column;
+    }
+
+    #sidebar
+    .four {
+        width:100%;
+        align-self: flex-start;
+    }
+
+    .four img {
+        width:100%
+    }
+
+    .idea > img {
+        width: 100%;
+        margin: auto;
+    } 
+}   
