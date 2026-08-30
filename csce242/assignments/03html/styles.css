@@ -15,7 +15,7 @@ body {
 /* Header */
  
 header {
-    padding: 25px;
+    padding: 25px 0;
     text-align: center;
     padding-bottom: 0%;
 }
@@ -38,6 +38,7 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    font-size: 22px;
 }
 
 nav li {
@@ -48,7 +49,7 @@ nav li {
 
 nav a {
     display: block;
-    padding: 20px;
+    padding: 10px;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -74,10 +75,11 @@ nav a:hover {
 }
 
 #sidebar h2 {
-    margin: 0;
-    padding: 15px;
+    margin: 10;
+    padding: 10px;
     color: #F2620F;
     text-align: center;
+    font-size: 30px;
 }
 
 #sidebar ul {
@@ -90,8 +92,9 @@ nav a:hover {
 #sidebar li { 
     background-color: white;
     border-bottom: 1px solid #F2BA52;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
+    font-size: 15px;
 }
 
 #sidebar a {
@@ -190,7 +193,6 @@ footer {
     .four {
         width:100%;
         align-self: flex-start;
-        padding-bottom: 10px;
     }
 
     .four img {
