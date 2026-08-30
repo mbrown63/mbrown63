@@ -102,19 +102,6 @@ nav a:hover {
     text-decoration: none;
 }
 
-#quick link {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-#quick link li {
-    padding: 12px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-}
-
 /* Title boxes */
 
 .four {
@@ -174,7 +161,7 @@ footer {
     text-align: center;
 }
 
-/* Smalls Screens */
+/* Small Mobile Screens */
 
 @media (max-width: 1000px) {
     nav ul {
@@ -189,13 +176,13 @@ footer {
         flex-direction: column;
     }
 
-    #sidebar
+    #sidebar,
     .four {
-        width:100%;
+        width: 100%;
     }
 
     .four img {
-        width:100%
+        width: 100%
     }
 
     .idea > img {
