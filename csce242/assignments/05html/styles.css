@@ -44,6 +44,7 @@ body {
 
 #hero img {
     display:block;
+    width:100%;
 }
 
 #hero-description {
@@ -53,58 +54,7 @@ body {
     box-shadow: 5px 5px 0 #FBDEE5;
 }
 
-.hero-arrow {
-    position:absolute;
-    top:10%;
-    font-size:48px;
-    color:white;
-    text-decoration: none;
-}
-
-#hero-arrow-right {
-    right:2%;
-}
-
-#hero-arrow-left {
-    left:2%;
-}
-
-/* Sidebar */
-#sidebar, #info {
-    padding:20px;
-}
-
-#sidebar {
-    background-color: var(--cards-bg);
-    border:1px solid var(--cards-border);
-    
-}
-
-#sidebar h2,
-#info h2 {
-    margin: 0 0 16px;
-}
-
-#info {
-    background-color: var(--cards-bg);
-    border:1px solid var(--cards-border);
-}
-
 /* Navigation */
-#main-nav ul, #quick-links, #login-nav ul {
-    list-style-type: none;
-    padding-left:0;
-    margin:0;
-}
-
-#quick-links li {
-    padding: 4px 0;
-}
-
-#quick-links li:hover {
-    color: #c06c84;
-    cursor: pointer;
-}
 
 #main-nav li {
     background-color: var(--main-nav);
@@ -114,36 +64,20 @@ body {
     font-size:20px;
 }
 
-#main-nav a, #login-nav a {
-    color: var(--highlight-bg);
+#main-nav ul {
+    list-style-type: none;
+    padding-left:0;
+    margin:0;
+    display:flex;  
+}
+
+#main-nav a {
+    color: var(--light-text);
     text-decoration: none;  /* Remover underline */
 }
 
 #main-nav a:hover {
     color:var(--highlight-bg);
-}
-
-/* login nav */
-#login-nav {
-    position:absolute;
-    top:1%;
-    right:1%;
-}
-
-#login-nav a {
-    color: var(--accent-text);
-    font-size:1.5em;
-    margin:6px;
-}
-
-#login-nav li {
-    display:inline-block;
-}
-
-#login-nav li:not(:last-child):not(:first-child)::after {
-  content: " | ";
-  color:var(--accent-text);
-  font-size:18px;
 }
 
 /*Footer links */
@@ -266,7 +200,33 @@ h1, h2, h3 {
         display:flex;
     }
 
-    /* Header */
+    main.columns {
+        display:block;
+    }
+
+    #info, .info-section {
+        padding: 40px;
+    }
+
+    #info img {
+        width: 100%;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    #info h2, .info-section h2 {
+        margin-bottom: 10px;
+    }
+
+    .info-section {
+        border-top: 1px solid var(--cards-border);
+    }
+
+    .info-section p, #info p {
+        line-height: 1.6;
+    }
+
+    /* Header */ 
     #logo {
         max-width:90%;
     }
