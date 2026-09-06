@@ -1,38 +1,41 @@
-<!DOCTYPE htmL>
+<!DOCTYPE html>
 <html>
     <head>
-        <!--
-            Author: Mi'Kayla Brown
-        -->
         <title>Columization</title>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
     </head>
     <body>
         <div id="content">
-            <header id="main header">
-                <img id ="logo" src="images/logo.png" alt="Logo"/>
+            <header id="main-header">
+                <img id="logo" src="https://dummyimage.com/100x100/abc/0011ff.png">
                 <h1>Being Flexible</h1>
-                <nav id="main nav">
-                </nav>
-                <nav id="login nav">
-                    <ul>
-                        <li><a href="#"></a>accountbox</li><span class="material-symbols-outlined">account_box</span>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">SignUp</a></li>
+                <nav id="main-nav">
+                    <ul class="columns">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
-                <h2></h2>
+                <nav id="login-nav">
+                    <ul>
+                        <li><a href="#"><span class="material-symbols-outlined">account_circle</span></a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Signup</a></li>
+                    </ul>
+                </nav>
             </header>
             <section id="hero">
-                <img src="http://dummyimages.com/1000x400" alt="Hero Image"/>
-                <p id="hero-description">Best image of Peach ever</p>
-                <a href="#" class="hero-arrow-right">&gt;</a>
-                <a href="#" class="hero-arrow-left">&lt;</a>
+                <img src="https://dummyimage.com/1600x400/f8b195/fff">
+                <p id="hero-description">Best Image of peach ever!</p>
+                <a href="#" class="hero-arrow" id="hero-arrow-right">&gt;</a>
+                <a href="#" class="hero-arrow" id="hero-arrow-left">&lt;</a>
             </section>
             <main class="columns">
                 <aside id="sidebar" class="one">
                     <h2>Helpful Links</h2>
-                    <ul id="quick links" class="columns">
+                    <ul id="quick-links">
                         <li>Link 1</li>
                         <li>Link 2</li>
                         <li>Link 3</li>
@@ -41,13 +44,49 @@
                 </aside>
                 <div id="info" class="four">
                     <h2>Information</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas quam ipsum, non dapibus lorem fringilla et. Pellentesque pharetra dolor tincidunt, rutrum turpis vel, commodo nisi. Integer pulvinar bibendum quam, vel vestibulum elit euismod sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent fermentum faucibus orci, quis fringilla odio aliquam nec. Sed felis tortor, consectetur in ante ut, accumsan rutrum lorem. Maecenas ullamcorper mauris quis quam ultricies, nec tempor quam rutrum. Morbi tempus dui vitae metus commodo hendrerit.</p>
                 </div>
-
             </main>
-            <footer>
+            <footer id="footer-links">
+                <header>
+                    <div id="footer-links-title" class="columns-mobile">
+                        <div>
+                            <img id="footer-logo" src="https://dummyimage.com/100x100/abc/0011ff.png">
+                        </div>
+                        <div>
+                            <h2>Subtitle</h2>
+                            <h1>Main Title</h1>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#"><span class="material-symbols-outlined">account_circle</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">account_circle</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">account_circle</span></a></li>
+                    </ul>
+                    
+
+                </header>
+                <div class="columns">
+                    <section class="2">
+                        <h3>Colleges and Schoools</h3>
+                        <hr>
+                        <ul>
+                            <l
+                        </ul>
+                    </section>
+                    <section class="2">
+                        <h3>Offices and Divisions</h3>
+                        <hr>
+                    </section>
+                    <section class="2">
+                        <h3>Tools</h3>
+                        <hr>
+                    </section>
+                </div>
+            </footer>
+            <footer id="footer-copy">
 
             </footer>
         </div>
     </body>
-</html>   
+</html>
