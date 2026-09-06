@@ -1,0 +1,813 @@
+/* Structure */
+
+:root {
+    --background: #ffffff;
+    --black: #000000;
+    --garnet: #75010a;
+    --light-text: #ffffff;
+    --gray: #ededed;
+    --border: #999999;
+}
+
+/* General */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+#content {
+    width: 100%;
+}
+
+/* Top Links */
+
+#top-links {
+    background-color: var(--black);
+    padding: 8px 4%;
+}
+
+#top-links ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 18px;
+}
+
+#top-links li {
+    padding-right: 18px;
+    border-right: 1px solid var(--light-text);
+}
+
+/* Removes the line after the last top link */
+#top-links li:last-child {
+    border-right: 0;
+}
+
+#top-links a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Header */
+
+#main-header {
+    background-color: var(--black);
+    color: var(--light-text);
+}
+
+#header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+#university-name {
+    display: flex;
+    align-items: center;
+}
+
+#university-name img {
+    width: 70px;
+    height: 70px;
+}
+
+#university-name p, #university-name h1 {
+    margin: 0;
+    padding-left: 15px;
+}
+
+#university-name p {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#university-name h1 {
+    font-size: 34px;
+}
+
+#header-content h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Navigation */
+
+#main-nav {
+    background-color: var(--garnet);
+}
+
+#main-nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5%;
+}
+
+#main-nav > ul > li {
+    position: relative;
+    padding: 16px 30px;
+    text-align: center;
+}
+
+#main-nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* Hero */
+
+/* Makes hero and feature images full width */
+#hero img, .feature-section > img {
+    display: block;
+    width: 100%;
+}
+
+/* Feature Sections */
+
+.feature-section {
+    position: relative;
+}
+
+.feature-box {
+    position: absolute;
+    top: 15%;
+    width: 380px;
+    padding: 30px;
+    background-color: var(--garnet);
+    color: var(--light-text);
+}
+
+.feature-box.left {
+    left: 5%;
+}
+
+.feature-box.right {
+    right: 5%;
+}
+
+.feature-box h2 {
+    margin: 0 0 18px;
+    color: var(--light-text);
+    font-size: 32px;
+}
+
+.feature-box p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.feature-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: var(--black);
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Quote */
+
+#quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 35px 10%;
+}
+
+#quote img {
+    width: 100px;
+    height: 100px;
+}
+
+#quote p {
+    max-width: 550px;
+    line-height: 1.5;
+}
+
+/* Small Cards */
+
+#small-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.small-card {
+    width: 220px;
+}
+
+.small-card img {
+    display: block;
+    width: 100%;
+}
+
+.small-card h3 {
+    margin: 10px 0 5px;
+    color: var(--garnet);
+    font-size: 18px;
+}
+
+.small-card p {
+    line-height: 1.5;
+}
+
+.small-card a {
+    color: var(--garnet);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Stay Connected */
+
+#stay-connected {
+    padding: 55px 20px;
+    background-color: var(--gray);
+    text-align: center;
+}
+
+#stay-connected h2 {
+    margin-top: 0;
+    color: var(--garnet);
+    font-size: 38px;
+}
+
+#stay-connected p {
+    margin-bottom: 30px;
+}
+
+#stay-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#stay-links a {
+    padding: 12px 25px;
+    background-color: var(--garnet);
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* School Information */
+
+#school-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 4%;
+    background-color: var(--gray);
+}
+
+/* Select every <div> that is directly inside #school-info */
+#school-info > div {
+    box-sizing: border-box;
+}
+
+#school-info-main {
+    flex: 2;
+    padding-right: 35px;
+}
+
+#school-info-main h2 {
+    margin: 0 0 25px;
+    color: var(--garnet);
+    font-size: 22px;
+}
+
+#school-action {
+    display: flex;
+    align-items: center;
+}
+
+.school-button {
+    display: inline-block;
+    margin: 0;
+    padding: 12px 20px;
+    background-color: var(--black);
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#school-social {
+    display: inline-flex;
+    gap: 20px;
+    margin-left: 35px;
+    vertical-align: middle;
+}
+
+#school-social a {
+    color: var(--garnet);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* School Information Links */
+
+.school-info-links {
+    flex: none;
+    width: 220px;
+    border-left: 1px solid var(--border);
+    padding: 5px 0 5px 40px;
+}
+
+.school-info-links + .school-info-links {
+    border-left: 0;
+    padding-left: 20px;
+}
+
+.school-info-links a {
+    display: block;
+    margin-bottom: 28px;
+    color: var(--garnet);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.school-info-links a:last-child {
+    margin-bottom: 0;
+}
+
+/* Address */
+
+#school-address {
+    flex: 1.2;
+    border-left: 1px solid var(--border);
+    padding: 5px 0 5px 30px;
+}
+
+#school-address a {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--garnet);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#school-address p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+/* University Footer */
+
+#footer-links {
+    padding: 40px 0;
+    background-color: var(--garnet);
+    color: var(--light-text);
+}
+
+#footer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#footer-title {
+    display: flex;
+    align-items: center;
+}
+
+#footer-title img {
+    width: 80px;
+    height: 80px;
+}
+
+#footer-title p, #footer-title h2 {
+    margin: 0;
+    padding-left: 15px;
+}
+
+#footer-title p {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#footer-title h2 {
+    color: var(--light-text);
+    font-size: 38px;
+}
+
+#footer-social {
+    display: flex;
+    gap: 25px;
+}
+
+#footer-social a {
+    color: var(--light-text);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+/* Footer Columns */
+
+#footer-columns {
+    display: flex;
+    gap: 40px;
+    padding: 40px 5% 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#footer-columns section {
+    flex: 1;
+}
+
+#colleges {
+    flex: 2;
+}
+
+#offices {
+    flex: 1.5;
+}
+
+#tools {
+    flex: 0.8;
+}
+
+#footer-columns h3 {
+    margin-top: 0;
+    color: var(--light-text);
+    text-transform: uppercase;
+}
+
+#footer-columns hr {
+    border: 0;
+    border-top: 1px solid var(--light-text);
+}
+
+#footer-columns ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#colleges ul {
+    column-count: 3;
+    column-gap: 25px;
+}
+
+#offices ul {
+    column-count: 2;
+    column-gap: 25px;
+}
+
+#footer-columns li {
+    margin: 10px 0;
+}
+
+#footer-columns a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+/* Bottom Footer */
+
+#footer-copy {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 70px;
+    background-color: var(--black);
+    color: var(--light-text);
+    font-size: 13px;
+}
+
+#footer-copy p {
+    margin: 0;
+    padding-right: 20px;
+    border-right: 1px solid var(--light-text);
+}
+
+#footer-copy ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-copy li {
+    padding: 0 15px;
+}
+
+/* footer-copy li:not(:last-child) */
+#footer-copy li:not(:last-child) {
+    border-right: 1px solid var(--light-text);
+}
+
+#footer-copy a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+/* Small Screens */
+
+@media (max-width: 999px) {
+
+    /* Top Links */
+
+    #top-links ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #top-links li {
+        border-right: 0;
+        padding-right: 0;
+    }
+
+    /* Header */
+
+    #header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #university-name {
+        flex-direction: column;
+    }
+
+    #university-name p, #university-name h1 {
+        padding-left: 0;
+    }
+
+    #header-content h2 {
+        font-size: 27px;
+    }
+
+    /* Navigation */
+
+    #main-nav > ul {
+        display: block;
+        padding: 0;
+    }
+
+    /* Select the <li> elements that are directly inside the <ul> inside #main-nav. */
+    #main-nav > ul > li {
+        padding: 15px;
+        border-bottom: 1px solid var(--light-text);
+    }
+
+    /* Feature Sections */
+
+    .feature-box, .feature-box.left, .feature-box.right {
+        position: static;
+        width: auto;
+        padding: 25px;
+    }
+
+    /* Quote */
+
+    #quote {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Small Cards */
+
+    #small-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .small-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Stay Connected */
+
+    #stay-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* School Information */
+
+    #school-info {
+        display: block;
+        padding: 35px 20px;
+        text-align: center;
+    }
+
+    #school-info-main {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    #school-info-main h2 {
+        width: 100%;
+        margin: 0 0 25px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #school-action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .school-button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    #school-social {
+        display: inline-flex;
+        gap: 15px;
+        margin: 0;
+    }
+
+    #school-social a {
+        font-size: 22px;
+    }
+
+    .school-info-links {
+        width: 285px;
+        margin: 35px auto 0;
+        padding: 25px 0;
+        border-left: 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .school-info-links + .school-info-links {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: 0;
+    }
+
+    .school-info-links a {
+        display: block;
+        margin: 0 0 25px;
+        padding: 0;
+        color: var(--garnet);
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /* Select only the last <a> link inside each .school-info-links section. */
+    .school-info-links a:last-child {
+        margin-bottom: 0;
+    }
+
+    #school-address {
+        width: 100%;
+        margin: 0 auto;
+        padding: 25px 0 0;
+        border-left: 0;
+        border-top: 1px solid var(--border);
+        text-align: center;
+    }
+
+    #school-address a {
+        display: inline;
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #school-address a:first-child {
+        margin-right: 4px;
+    }
+
+    #school-address p {
+        width: 100%;
+        margin: 8px 0;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /* University Footer */
+
+    #footer-header {
+        display: block;
+        text-align: center;
+        padding: 0 6%;
+    }
+
+    #footer-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-title p, #footer-title h2 {
+        padding-left: 15px;
+        text-align: left;
+    }
+
+    #footer-title h2 {
+        font-size: 38px;
+    }
+
+    #footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    /* Footer Columns */
+
+    #footer-columns {
+        display: block;
+        padding: 35px 6% 0;
+    }
+
+    #footer-columns section {
+        padding-bottom: 35px;
+    }
+
+    #footer-columns h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    #footer-columns hr {
+        margin-bottom: 15px;
+    }
+
+    #colleges, #offices, #tools {
+        width: 100%;
+    }
+
+    #colleges ul, #offices ul {
+        column-count: 2;
+        column-gap: 35px;
+    }
+
+    #tools ul {
+        column-count: 1;
+    }
+
+    #footer-columns li {
+        margin: 12px 0;
+    }
+
+    /* Bottom Footer */
+
+    #footer-copy {
+        display: block;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    #footer-copy p {
+        display: inline-block;
+        margin: 0;
+        padding: 0 15px;
+        border-right: 1px solid var(--light-text);
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    #footer-copy ul {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    #footer-copy li {
+        display: inline-block;
+        margin: 4px 0;
+        padding: 0 15px;
+        border-right: 1px solid var(--light-text);
+    }
+
+    #footer-copy li:last-child {
+        border-right: 0;
+    }
+
+    #footer-copy a {
+        color: var(--light-text);
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
