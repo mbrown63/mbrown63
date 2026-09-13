@@ -3,8 +3,8 @@
     --background: #FAF1E8;
     --headings: #393D3B;
     --columns: #C2CFC7;
-    --speech: #F7BECC;
-    --border: #C2B7AB;
+    --speech: white;
+    --border: #e8e0d8;
     --accent-text: #A64F6C;
 }
 
@@ -63,7 +63,8 @@ main {
 }
 
 /* Styles for JS */
-.speech-bubble {
+#speech-bubble {
+    display: none;
     background-color: var(--speech);
     width: 50px;
     padding: 10px;
@@ -72,7 +73,7 @@ main {
     position: relative;
 }
 
-.speech-bubble::after {
+#speech-bubble::after {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -86,10 +87,19 @@ main {
     position: relative;
 }
 
-.emoji {
+#emoji {
+    display: none;
     position: absolute;
     top: 70px;
     left: 20px;
+}
+
+#speech-bubble.show {
+    display: block;
+}
+
+#emoji.show {
+    display: block;
 }
 
 /* Images */

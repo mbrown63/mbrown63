@@ -1,25 +1,14 @@
-const speech = document.getElementById("speech");
-const drink = document.getElementById("drink");
-const drinkMessage = document.getElementById("drink-message");
-const sun = document.getElementById("sun");
-const sticker = document.getElementById("sticker");
-
-const showSpeech = () => {
-    speech.innerHTML += "<div class='speech-bubble'>Hi</div>";
+//shows speech bubble when column is clicked
+document.getElementById("speech").onclick = (e) => {
+    document.getElementById("speech-bubble").classList.toggle("show");
 };
 
-const showDrink = () => {
-    drinkMessage.innerHTML = drink.value + ": Nice Choice!";
+//shows beverage choice when selected
+document.getElementById("drink").onchange = (e) => {
+    document.getElementById("drink-message").innerHTML = e.target.value + ": Nice Choice!";
 };
 
-const addSticker = () => {
-    const emoji = document.createElement("span");
-    emoji.innerHTML = "😊";
-    emoji.classList.add("emoji");
-
-    sticker.appendChild(emoji);
+//adds sticker when image is clicked
+document.getElementById("sun").onclick = (e) => {
+    document.getElementById("emoji").classList.toggle("show");
 };
-
-speech.addEventListener("click", showSpeech);
-drink.addEventListener("change", showDrink);
-sun.addEventListener("click", addSticker);
