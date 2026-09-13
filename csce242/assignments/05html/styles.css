@@ -5,7 +5,6 @@
     --columns: #C2CFC7;
     --speech: #F7BECC;
     --border: #C2B7AB;
-    --light-text: #FAF1E8;
     --accent-text: #A64F6C;
 }
 
@@ -109,7 +108,7 @@ footer {
 
 /* Responsive Design */
 
-/* 600 px or larger */
+/* 600 px or smaller */
 @media (max-width: 600px) {
     main {
         display: block;
