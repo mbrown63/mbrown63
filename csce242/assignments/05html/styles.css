@@ -1,0 +1,121 @@
+/* Structure */
+:root {
+    --background: #FAF1E8;
+    --headings: #393D3B;
+    --columns: #C2CFC7;
+    --speech: #F7BECC;
+    --border: #C2B7AB;
+    --light-text: #FAF1E8;
+    --accent-text: #A64F6C;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header */
+#content {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    padding: 50px 0 10px;
+    margin: 0;
+    color: var(--headings);
+}
+
+header h2 {
+    margin: 0 0 25px;
+    color: var(--accent-text);
+}
+
+/* Columns */
+main {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid var(--border);
+    background-color: var(--columns);
+    min-height: 200px;
+    padding: 15px;
+}
+
+.column h3 {
+    text-align: center;
+    color: var(--headings);
+}
+
+/* Beverage */
+#drink {
+    display: block;
+    margin: 15px auto;
+    padding: 5px;
+}
+
+/* Styles for JS */
+.speech-bubble {
+    background-color: var(--speech);
+    width: 50px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border-top: 10px solid var(--speech);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+#sticker {
+    position: relative;
+}
+
+.emoji {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+
+/* Images */
+#sun {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: var(--headings);
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+
+/* 600 px or larger */
+@media (max-width: 600px) {
+    main {
+        display: block;
+    }
+
+    .column {
+        margin: 10px 0;
+    }
+}
