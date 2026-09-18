@@ -164,6 +164,11 @@ h1, h2, h3 {
     50%{background-color: #393D3B;}
 }
 
+#hidding
+.hidden {
+    display:none;
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */
