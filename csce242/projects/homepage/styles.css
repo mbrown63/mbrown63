@@ -1,0 +1,379 @@
+/* Structure */
+:root {
+    --background: #000000;
+    --bright-red: #e32629;
+    --dark-red: #5c0b0b;
+    --red: #8b1111;
+    --light-text: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    padding: 0px;
+    margin: 0px;
+    color: var(--light-text)
+}
+
+/* Header */
+#main-header {
+    background-color: var(--background);
+    position: relative;
+    padding: 15px 25px;
+}
+
+#main-nav ul {
+    list-style-type: none; /* removes the bullets */
+    padding-left: 0;
+    margin: 0;
+}
+
+#main-nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#listen-now {
+    color: var(--light-text);
+    text-decoration: none; /* removes the Underlines */
+    text-transform: uppercase;
+    background-color: var(--dark-red);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* hero */
+#hero {
+    background-color: var(--red);
+}
+
+#hero-info {
+    padding: 40px 32px;
+}
+
+#hero-info h2 {
+    margin: 0;
+    font-size: 36px;
+    max-width: 250px;
+}
+
+#hero-info a {
+    color: var(--background);
+    background-color: var(--light-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+#hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Now Playing */
+#now-playing-info {
+    background-color: var(--background);
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+#album-cover {
+    padding: 15px;
+    margin-top: 55px;
+}
+
+#album-cover img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+#now-playing {
+    background-color: var(--red);
+    text-align: left;
+    padding: 25px;
+    margin-top: 55px;
+    box-sizing: border-box; /* Whatever width I give this box, KEEP it that width. Include the padding inside that size */
+}
+
+#now-playing h2 {
+    margin: 5px 0;
+}
+
+#now-playing p {
+    margin: 5px 0;
+}
+
+#song-progress {
+    width: 90%;
+    height: 4px;
+    background-color: #999999;
+    margin: 25px auto 8px;
+}
+
+#song-progress-fill {
+    width: 60%;
+    height: 4px;
+    background-color: var(--bright-red);
+    position: relative;
+}
+
+#song-progress-dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--bright-red);
+    border-radius: 50%;
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%); /* pulls the circle up by half of the circle’s own height, which centers it on the line. */
+}
+
+#song-time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+#music-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 25px auto;
+}
+
+#music-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px auto;
+}
+
+#music-links a {
+    color: var(--light-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#latest-release {
+    background-color: var(--red);
+    text-align: left;
+    padding: 15px;
+    margin-top: 55px;
+}
+
+#latest-release h2 {
+    font-size: 36px;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+#latest-release h3 {
+    margin: 10px 0 25px;
+}
+
+#latest-release p {
+    margin: 5px 0;
+}
+
+#latest-release a {
+    color: var(--light-text);
+    text-decoration: none; /* Remove the underline from my link. */
+    display: block;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+/* Voices */
+#voices {
+    background-color: var(--red);
+    padding: 30px;
+    margin-top: 55px;
+
+}
+
+#voices h2, #voices h3 {
+    text-align: left;
+    background-color: var(--red);
+    font-size: 30px;
+}
+
+.voice-card {
+    text-align: left;
+    padding: 15px;
+    background-color: var(--background);
+}
+
+.voice-card h4 {
+    margin: 10px 0 5px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.voice-card p {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.voice-card img {
+    width: 220px;
+    height: auto;
+    margin: auto;
+}
+
+/* Our story */
+#story {
+    background-color: var(--background);
+}
+
+#story-info {
+    padding: 40px 32px;
+}
+
+#story-info h2 {
+    margin: 0;
+    font-size: 36px;
+    width: auto;
+}
+
+#story-info a {
+    color: var(--background);
+    background-color: var(--light-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+#story-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+
+/* 1000px or larger */
+@media (min-width: 1000px) {
+    #main-header {
+        display: flex;
+        align-items: center;
+    }
+
+    #main-header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        flex: 1;
+    }
+
+    .columns {
+        display: flex;
+    }
+
+    #main-nav {
+        flex: 3; /* middle space */
+    }
+
+    #main-nav li {
+        padding: 0 8px;
+    }
+
+    #listen-now {
+        margin-left: auto; /* pushes to the right */
+    }
+
+    #hero {
+        display: flex;
+        height: 360px;
+    }
+
+    #hero-info {
+        flex: 1;
+    }
+
+    #hero-image {
+        flex: 2;
+    }
+
+    #hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    #now-playing-info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #album-cover {
+        flex: 1;
+        height: 300px;
+    }
+
+    #album-cover img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    #now-playing {
+        flex: 2;
+        height: 297px;
+    }
+
+    #latest-release {
+        flex: 1;
+        height: 267px;
+    }
+
+    #voice-cards {
+        display: flex;
+        gap: 20px;
+    }
+
+    .voice-card {
+        flex: 1;
+        padding: 0%;
+    }
+
+    .voice-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+    }
+    
+    #story {
+        display: flex;
+        height: 360px;
+    }
+
+    #story-info {
+        flex: 1;
+    }
+
+    #story-image {
+        flex: 2;
+    }
+
+    #story-image img {
+        width: 600px;
+        height: 350px;
+        object-fit: cover;
+        padding-left: 30px;
+    }
+}
