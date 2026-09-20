@@ -368,7 +368,7 @@ body {
 
 #footer p {
     font-size: 13px;
-    padding-left: 150px;
+    padding-left: 250px;
 }
 
 /* Responsive Design */
@@ -384,11 +384,11 @@ body {
     }
 
     #main-nav {
-        flex: 6;
+        flex: 0;
     }
 
     #main-nav ul {
-        padding-left: 45%;
+        padding-left: 0%;
     }
 
     #listen-now {
@@ -410,7 +410,7 @@ body {
 
     #hero-image img {
         height: 100%;
-        object-fit: cover;
+        object-fit: center;
     }
 
     #now-playing-info {
@@ -449,7 +449,7 @@ body {
     .voice-card img {
     width: 100%;
     height: 270px;
-    object-fit: cover;
+    object-fit: center;
     display: block;
     }
     
@@ -470,7 +470,7 @@ body {
     #story-image img {
         width: 90%;
         height: 390px;
-        object-fit: cover;
+        object-fit: center;
         padding-left: 30px;
     }
     
@@ -490,7 +490,7 @@ body {
     #events-image img {
         width: 100%;
         height: 340px;
-        object-fit: cover;
+        object-fit: center;
     }
 
     #footer-links a {
@@ -510,7 +510,7 @@ body {
     }
 
     #main-nav {
-        flex: 1;
+        flex: 0 1 auto;
     }
 
     #main-nav ul {
@@ -523,7 +523,7 @@ body {
     }
 
     #main-nav a {
-        font-size: 15px;
+        font-size: 8px;
     }
 
     #listen-now {
@@ -559,26 +559,30 @@ body {
 
     #footer {
         padding: 5px;
-        gap: 15px;
+        gap: 8px;
     }
 
     #footer h2 {
         font-size: 14px;
-        padding-left: 0%;
+        padding: 5px;
+    }
+    #footer-line {
+        width: 20px;
+        margin: 0;
     }
 
     #footer-links {
-        gap: 8px;
+        gap: 6px;
     }
 
     #footer-links a {
-        padding-left: 10px;
-        font-size: 20px;
+        margin-right: 0;
+        font-size: 10px;
     }
 
     #footer p {
         font-size: 9px;
         white-space: nowrap;
-        padding-left: auto;
+        padding-left: 25px;
     }
 }
