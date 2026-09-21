@@ -1,0 +1,171 @@
+/* Structure */
+:root {
+    --background:#f1f2e9;
+    --headings:#5d878c;
+    --header:#f1f2e9;
+    --main-nav:#5d878c;
+    --cards-bg:#FFFFFF;
+    --cards-border:#AFC1C5;
+    --light-text:#FFFFFF;
+    --accent-text:#d9898b;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    padding:0px;
+    margin:0px;
+}
+
+/* Header */
+#main-header {
+    background-color: var(--header);
+    position: relative;
+}
+
+#main-header h1 {
+    text-align:center;
+    padding:20px 0 5px;
+    margin:0;
+    color:var(--headings);
+    font-size:32px;
+}
+
+#main-header h2 {
+    text-align:center;
+    color:var(--accent-text);
+    margin:8px 0 20px;
+}
+
+/* Navigation */
+#main-nav ul {
+    list-style-type:none;
+    padding-left:0;
+    margin:0;
+}
+
+#main-nav li {
+    background-color:var(--background);
+    padding:5px 0;
+    text-align:center;
+    font-size:18px;
+}
+
+#main-nav a {
+    color:var(--headings);
+    text-decoration:none;
+}
+
+#main-nav a:hover {
+    color:var(--accent-text);
+    cursor:pointer;
+}
+
+/* Navigation Toggle */
+#toggle-nav {
+    text-align:left;
+    margin-left:15px;
+    color:var(--headings);
+    height:25px;
+}
+
+#toggle-nav::before {
+    content:"▼";
+}
+
+.nav-open::before {
+    content:"▲";
+}
+
+/* Main Content */
+main {
+    padding:10px;
+}
+
+.project-card {
+    background:var(--cards-bg);
+    border:1px solid var(--cards-border);
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.project-card h3 {
+    margin:0;
+    padding:25px 10px 10px;
+    color:var(--headings);
+    font-size:20px;
+}
+
+.project-card p {
+    padding:5px;
+    margin:5px;
+    color:var(--headings);
+    font-size:18px;
+}
+
+.project-card input {
+    width:200px;
+    height:20px;
+}
+
+/* Footer */
+footer {
+    text-align:center;
+    color:var(--headings);
+    font-size:16px;
+}
+
+/* Hiding */
+.hidden {
+    display:none;
+}
+
+.hide-small {
+    display:none;
+}
+
+/* Responsive Design */
+
+/* 1000 px or larger */
+@media (min-width:1000px) {
+    .hide-small {
+        display:flex;
+    }
+
+    /* Structure */
+    #content {
+        width:95%;
+        margin:auto;
+    }
+
+    main {
+        width:95%;
+        margin:auto;
+    }
+
+    /* Navigation */
+    #toggle-nav {
+        display:none;
+    }
+
+    .columns {
+        display:flex;
+        justify-content:center;
+    }
+
+    #main-nav li {
+        background-color:var(--background);
+        padding:5px 8px;
+    }
+
+    #main-nav li:not(:last-child)::after {  /* learned how to use, so i can put a | after every menu item EXCEPT the last one */
+        content:" |";
+        color:var(--headings);
+        padding-left:8px;
+    }
+
+    /* Main Content */
+    .project-card {
+        min-height:150px;
+    }
+}
