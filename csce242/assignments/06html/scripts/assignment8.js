@@ -30,17 +30,17 @@ const daysLeft = Math.ceil(timeDifference / (1000 * 60 * 60 * 24)); /* 1000 = 1s
 
 document.getElementById("p-days-left").innerHTML = `You have ${daysLeft} days left in the semester`;
 
-    const pSemesterMessage = document.getElementById("p-semester-message");
+const pSemesterMessage = document.getElementById("p-semester-message");
 
-    if(daysLeft > 100){
-        pSemesterMessage.innerHTML = "Not time to start counting down yet.";
-    } else if(daysLeft > 50){
-        pSemesterMessage.innerHTML = "The semester is getting closer to the end.";
-    } else if(daysLeft > 20){
-        pSemesterMessage.innerHTML = "The final stretch is coming!";
-    } else {
-        pSemesterMessage.innerHTML = "Almost there! Keep pushing!";
-    }
+if(daysLeft > 100){
+    pSemesterMessage.innerHTML = "Not time to start counting down yet.";
+} else if(daysLeft > 50){
+    pSemesterMessage.innerHTML = "The semester is getting closer to the end.";
+} else if(daysLeft > 20){
+    pSemesterMessage.innerHTML = "The final stretch is coming!";
+} else {
+    pSemesterMessage.innerHTML = "Almost there! Keep pushing!";
+}
 
 //exercise 1 link
 document.getElementById("link-exercise1").onclick = (e) => {
