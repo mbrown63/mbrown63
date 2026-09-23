@@ -368,7 +368,75 @@ body {
 
 #footer p {
     font-size: 13px;
-    padding-left: 150px;
+    padding-left: 30%;
+}
+
+/* gallery */
+#gallery-info {
+    background-color: var(--red);
+    padding-top: 10px;
+}
+
+#gallery-info h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#gallery-info h3 {
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+#gallery-info p {
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+/* gallery images */
+#group {
+    background-color: var(--background);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#group img {
+    width: 100%;
+    height: auto;
+    gap: 5%;
+}
+
+#studio-image, #music-image, #together-image, #outdoor-image {
+    width: calc(50% - 5px); /* makes room for that gap so the second image doesn’t get pushed onto another row. */
+}
+
+#stage-image img {
+    width: 50%;
+    padding-left: 35%;
+}
+
+#studio-image p, #music-image p, #together-image p, #outdoor-image p {
+    text-align: center;
+    padding: 5%;
+}
+
+#stage-image p{
+    text-align: center;
+    padding-left: 25%;
+}
+
+#footers {
+    background-color: var(--red);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+#footers p {
+    font-size: 13px;
+    padding-left: 35%;
 }
 
 /* Responsive Design */
