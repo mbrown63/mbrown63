@@ -19,7 +19,7 @@ body {
 #main-header {
     background-color: var(--background);
     position: relative;
-    padding: 15px 25px;
+    padding: 15px 0px;
     display: flex;
     align-items: center;
 }
@@ -27,7 +27,7 @@ body {
 #main-header h1 {
     font-size: 30px;
     flex: 1;
-    padding: 0%;
+    padding-right: 0;
     margin: 0;
 }
 
@@ -86,6 +86,7 @@ body {
     border-radius: 20px;
     font-size: 13px;
 }
+
 #hero-image img {
     width: 100%;
     height: auto;
@@ -364,11 +365,16 @@ body {
     text-transform: uppercase;
     font-size: 13px;
     margin-right: 20px;
+    text-align: center;
 }
 
 #footer p {
-    font-size: 13px;
-    padding-left: 30%;
+    font-size: 10px;
+    padding-left: 15%;
+}
+
+.red-footer {
+    background-color: var(--red) !important;
 }
 
 /* gallery */
@@ -413,7 +419,7 @@ body {
 
 #stage-image img {
     width: 50%;
-    padding-left: 35%;
+    padding-left: 30%;
 }
 
 #studio-image p, #music-image p, #together-image p, #outdoor-image p {
@@ -423,9 +429,10 @@ body {
 
 #stage-image p{
     text-align: center;
-    padding-left: 25%;
+    padding-left: 10%;
 }
 
+/* gallery footer */
 #footers {
     background-color: var(--red);
     padding: 10px;
@@ -437,6 +444,306 @@ body {
 #footers p {
     font-size: 13px;
     padding-left: 35%;
+}
+
+/* music */
+#sound-info {
+    background-color: var(--red);
+    padding-top: 10px;
+}
+
+#sound-info h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#sound-info h3 {
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+#sound-info p {
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+#album-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#album-image img {
+    width: 400px;
+    height: 400px;
+}
+
+#harmony {
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+#harmony h2 {
+    margin: 0;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+
+#harmony p {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+#harmony h3 {
+    font-size: 36px;
+    padding-bottom: 15px;
+}
+
+/* track */
+
+#track-list-info {
+    padding: 20px 32px;
+}
+
+#track-line {
+    width: 77px;
+    border-top: 2px solid var(--bright-red);
+    margin: 20px 57px;
+    padding-bottom: 10px;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.track p {
+    width: 50px;
+}
+
+.track-name {
+    font-size: 16px;
+    width: 75px;
+    white-space: nowrap;
+}
+
+.track-time {
+    margin-left: auto;
+    text-align: right;
+}
+
+#track-line1, #track-line2, #track-line3, #track-line4 {
+    width: 98%;
+    border-top: 3px solid var(--bright-red);
+    margin: 5px 0 15px;
+}
+
+#music-sites {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+}
+
+#music-sites a {
+    color: var(--light-text);
+    text-decoration: none; 
+}
+
+
+/* events */
+#shows {
+    background-color: var(--red);
+    display: flex;
+}
+
+#shows-info h3 {
+    padding-top: 25px;
+    font-size: 14px;
+}
+
+#shows-info h1 {
+    font-size: 46px;
+}
+
+#shows-info p {
+    padding-bottom: 25px;
+    font-size: 17px;
+}
+
+#shows-image img {
+    width: 450px;
+    height: 225px;
+    padding: 5%;
+    padding-left: 69%;
+}
+
+#tour {
+    white-space: nowrap;
+}
+
+.tour {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.tour p {
+    width: 50px;
+}
+
+.tour-dates {
+    font-size: 16px;
+    width: 75px;
+    white-space: nowrap;
+}
+
+.show-city {
+    padding-right: 15%;
+    padding-left: 5%;
+}
+
+.tour-time {
+    margin-left: auto;
+    padding-right: 25%;
+}
+
+#tour a {
+    color: var(--light-text);
+    text-decoration: none; 
+    padding-right: 5%;
+}
+
+#tour-line1, #tour-line2, #tour-line3, #tour-line4 {
+    width: 98%;
+    border-top: 3px solid var(--bright-red);
+    margin: 5px 0 15px;
+}
+
+#later {
+    display: flex;
+}
+
+#later h1 {
+    padding-top: 15px;
+}
+
+#tour-image img {
+    width: 450px;
+    height: 225px;
+    padding: 5%;
+    padding-left: 76%;
+}
+
+/* booking */
+#booking {
+    background-color: var(--red);
+    display: flex;
+    padding: 15px 5px;
+}
+
+#booking-info {
+    flex: 1;
+}
+
+#booking-info h3 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#booking-info h1 {
+    font-size: 36px;
+    margin: 25px 0 20px;
+}
+
+#booking-info p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#book-unisoghn {
+    flex: 1;
+}
+
+#book-unisoghn img {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    display: block;
+}
+
+#request {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 0 70px;
+}
+
+#request-info h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#request-info p {
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+#request {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 65px;  /* Put 65 pixels of space between the columns. */
+}
+
+#request-info {
+    width: 100%;
+}
+
+#request-form {
+    background-color: var(--red);
+    padding: 30px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 65px;
+}
+
+.input {
+    width: calc(50% - 33px); /* Make the element 50% of the available width, then subtract 33 pixels. */
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    box-sizing: border-box;
+}
+
+#message {
+    height: 75px;
+}
+
+#send-request {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#send-request a {
+    display: inline-block; /* Lets the element stay only as wide as it needs to be, while allowing padding, width, and height. */
+    background-color: var(--light-text);
+    color: var(--red);
+    text-decoration: none;
+    font-size: 11px;
+    padding: 12px 20px;
+    border-radius: 3px;
 }
 
 /* Responsive Design */
