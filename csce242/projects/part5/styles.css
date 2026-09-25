@@ -377,7 +377,7 @@ body {
     background-color: var(--red) !important;
 }
 
-/* gallery */
+/* gallery page */
 #gallery-info {
     background-color: var(--red);
     padding-top: 10px;
@@ -446,7 +446,7 @@ body {
     padding-left: 35%;
 }
 
-/* music */
+/* music page */
 #sound-info {
     background-color: var(--red);
     padding-top: 10px;
@@ -552,8 +552,135 @@ body {
     text-decoration: none; 
 }
 
+/* about page */
+#vision {
+    background-color: var(--red);
+    display: flex;
+}
 
-/* events */
+#one-vision h3 {
+    padding-top: 25px;
+    font-size: 14px;
+}
+
+#one-vision h1 {
+    font-size: 46px;
+}
+
+#one-vision p {
+    padding-bottom: 25px;
+    font-size: 17px;
+}
+
+#vision-image img {
+    width: 650px;
+    height: 275px;
+    padding: 5%;
+    padding-left: 50%;
+}
+
+#stories {
+    display: flex;
+}
+
+#story-images img {
+    width: 650px;
+    height: 370px;
+    padding: 5%;
+}
+
+#our-story h2 {
+    padding-top: 25px;
+    font-size: 16px;
+    padding-left: 25%;
+}
+
+#our-story h1 {
+    font-size: 38px;
+    padding-left: 25%;
+}
+
+#our-story p {
+    padding-bottom: 25px;
+    font-size: 18px;
+    padding-left: 25%;
+}
+
+/* Meet UNISOGHN */
+#voice {
+    background-color: var(--red);
+    padding: 40px;
+}
+
+#voice h2 {
+    font-size: 36px;
+    margin: 0 0 8px;
+}
+
+#voice h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 35px;
+}
+
+#voice > span { /* Select the <span> that is directly inside the element with id="voice" */
+    display: block;
+    text-align: right;
+    color: var(--bright-red);
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#voice-card {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.voice-cards {
+    background-color: var(--background);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.voice-cards img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    display: block;
+}
+
+.voice-cards h4 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 10px 15px 2px;
+}
+
+.voice-cards p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 5px 15px;
+}
+
+
+.voice-cards h4 + p {  /* This targets their titles under their name */
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+
+.voice-cards span {  /* This adds the Red slogan at bottom */
+    color: var(--bright-red);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+    margin: auto 15px 15px;
+}
+
+/* events page */
 #shows {
     background-color: var(--red);
     display: flex;
@@ -637,7 +764,7 @@ body {
     padding-left: 76%;
 }
 
-/* booking */
+/* booking page */
 #booking {
     background-color: var(--red);
     display: flex;
