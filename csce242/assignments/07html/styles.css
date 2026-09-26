@@ -1,8 +1,18 @@
+/* anything with comments beside it was help from CHATGPT */
 :root {
     --background: #7ac94b;
     --road: #3b3b3b;
     --road-border: #dddddd;
     --road-line: #ffd84d;
+
+    --car-one: #005eff;
+    --car-two: #a9e84d;
+    --car-three: #6c63ad;
+    --car-four: #ef876e;
+    --car-five: #482080;
+    --car-six: #bde8f5;
+    --car-seven: #b875c4;
+
     --car-window: #9ed8ff;
     --car-wheel: #666666;
     --text: #000000;
@@ -35,7 +45,6 @@ h1 {
     box-sizing: border-box;
 }
 
-/* Road dashed line */
 #road::before {
     content: ""; /* This is required for ::before to actually appear. */
     position: absolute;
@@ -43,22 +52,49 @@ h1 {
     left: 0;
     width: 100%;
     height: 6px;
-    background: repeating-linear-gradient( /* used chat to learn to create the dashes */
+    background: repeating-linear-gradient( /* create the dashes */
         to right,
         var(--road-line) 0,
         var(--road-line) 55px,
-        transparent 55px, /* From 55px to 100px, there’s no color. */
-        transparent 100px
+        transparent 55px,
+        transparent 100px /* creates the space between each dash */
     );
     transform: translateY(-50%);
 }
 
-/* Car */
 .car {
     position: absolute;
     width: 100px;
     height: 45px;
     border-radius: 12px 12px 8px 8px;
+}
+
+.car:nth-child(1) {
+    background: var(--car-one);
+}
+
+.car:nth-child(2) {
+    background: var(--car-two);
+}
+
+.car:nth-child(3) {
+    background: var(--car-three);
+}
+
+.car:nth-child(4) {
+    background: var(--car-four);
+}
+
+.car:nth-child(5) {
+    background: var(--car-five);
+}
+
+.car:nth-child(6) {
+    background: var(--car-six);
+}
+
+.car:nth-child(7) {
+    background: var(--car-seven);
 }
 
 /* Car window */
@@ -75,7 +111,7 @@ h1 {
 
 /* Car wheels */
 .car::after {
-    content: ""; /* This is required for ::before to actually appear. */
+    content: ""; /* This is required for ::after to actually appear. */
     position: absolute;
     left: 12px;
     bottom: -9px;
