@@ -5,13 +5,12 @@ const beaches = {
     "Daytona Beach": "https://www.google.com/maps?q=Daytona+Beach+Florida&output=embed"
 };
 
-const parks = {
-    "Carowinds": "https://www.google.com/maps?q=Carowinds&output=embed",
-    "Walt Disney World": "https://www.google.com/maps?q=Walt+Disney+World&output=embed",
-    "Universal Orlando Resort": "https://www.google.com/maps?q=Universal+Orlando+Resort&output=embed",
-    "Six Flags Over Georgia": "https://www.google.com/maps?q=Six+Flags+Over+Georgia&output=embed"
+const mountains = {
+    "Asheville": "https://www.google.com/maps?q=Asheville+North+Carolina&output=embed",
+    "Boone": "https://www.google.com/maps?q=Boone+North+Carolina&output=embed",
+    "Hot Springs": "https://www.google.com/maps?q=Hot+Springs+North+Carolina&output=embed",
+    "Table Rock": "https://www.google.com/maps?q=Table+Rock+South+Carolina&output=embed"
 };
-
 const showDestinations = () => {
     const destinationType = document.getElementById("destination-type").value;
     const destinationLinks = document.getElementById("destination-links");
@@ -24,7 +23,7 @@ const showDestinations = () => {
 
     if(destinationType == "beaches") {
         destinations = beaches;
-    } else if(destinationType == "parks") {
+    } else if(destinationType == "mountains") {
         destinations = parks;
     } else {
         return;
