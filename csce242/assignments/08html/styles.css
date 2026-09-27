@@ -1,0 +1,53 @@
+body {
+    background: #f5f5ed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #568895;
+}
+
+#content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    color: #e78383;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+#destination-select {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+#destination-type {
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 16px;
+    color: #568895;
+}
+
+#destination-links {
+    width: 200px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+#destination-links a {
+    display: block;
+    color: #568895;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+#map {
+    margin-top: 15px;
+}
+
+footer {
+    color: #e78383;
+    font-size: 16px;
+}
