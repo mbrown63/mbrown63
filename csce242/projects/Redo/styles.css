@@ -1,0 +1,1079 @@
+/* Structure */
+:root {
+    --black: #080706;
+    --red: #b51f1f;
+    --bright-red: #e32629;
+    --dark-red: #5c0b0b;
+    --cream: #e8d5bd;
+    --light-cream: #f0dfca;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width: 100%;
+}
+
+#main-header {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+#logo-image {
+    flex: 1;
+}
+
+#logo-image img {
+    width:150px;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#main-nav {
+
+}
+
+#main-nav ul {
+
+}
+
+#main-nav li {
+
+}
+
+#main-nav a {
+
+}
+
+.columns {
+
+}
+
+#social-icons {
+
+}
+
+#social-icons a {
+
+}
+
+
+/* =========================
+   HOME PAGE
+   ========================= */
+
+
+/* Hero */
+
+#hero {
+
+}
+
+#hero-info {
+
+}
+
+#hero-info p {
+
+}
+
+#hero-info h1 {
+
+}
+
+#hero-info h3 {
+
+}
+
+#hero-info a {
+
+}
+
+#hero-image {
+
+}
+
+#hero-image img {
+
+}
+
+
+/* The Voices */
+
+#middle {
+
+}
+
+#middle h2 {
+
+}
+
+#middle h3 {
+
+}
+
+#middle a {
+
+}
+
+#voice-cards {
+
+}
+
+.voice-card {
+
+}
+
+.voice-card img {
+
+}
+
+.voice-card h4 {
+
+}
+
+.voice-card p {
+
+}
+
+
+/* The Sound */
+
+#the-sound {
+
+}
+
+#the-sound p {
+
+}
+
+#the-sound h1 {
+
+}
+
+#the-sound a {
+
+}
+
+#album-cover-image {
+
+}
+
+#album-cover-image img {
+
+}
+
+#audio-player {
+
+}
+
+#play-button {
+
+}
+
+#waveform {
+
+}
+
+
+/* Music List */
+
+#music-list {
+
+}
+
+.music {
+
+}
+
+.music p {
+
+}
+
+.music-name {
+
+}
+
+.music-time {
+
+}
+
+#music-line1 {
+
+}
+
+#music-line2 {
+
+}
+
+#music-line3 {
+
+}
+
+#music-line4 {
+
+}
+
+#music-line5 {
+
+}
+
+
+/* Gallery Preview */
+
+#pictures {
+
+}
+
+#picture-gallery {
+
+}
+
+#picture-gallery p {
+
+}
+
+#picture-gallery h2 {
+
+}
+
+#picture-gallery a {
+
+}
+
+.polaroid {
+
+}
+
+.polaroid img {
+
+}
+
+.polaroid p {
+
+}
+
+
+/* Events Preview */
+
+#events {
+
+}
+
+#events-info {
+
+}
+
+#events-info p {
+
+}
+
+#events-info h2 {
+
+}
+
+#events-info a {
+
+}
+
+#event-line {
+
+}
+
+.event {
+
+}
+
+.event p {
+
+}
+
+.event-city {
+
+}
+
+#events-image {
+
+}
+
+#events-image img {
+
+}
+
+
+/* Booking Preview */
+
+#planing {
+
+}
+
+#planing p {
+
+}
+
+#planing h1 {
+
+}
+
+#planing a {
+
+}
+
+
+/* Our Story Preview */
+
+#our-story-image {
+
+}
+
+#our-story-image img {
+
+}
+
+#our-story {
+
+}
+
+#our-story p {
+
+}
+
+#our-story h2 {
+
+}
+
+#our-story a {
+
+}
+
+
+/* =========================
+   ABOUT PAGE
+   ========================= */
+
+#about {
+
+}
+
+#about-header {
+
+}
+
+#about-header h1 {
+
+}
+
+#about-header h1 span {
+
+}
+
+#about-header h2 {
+
+}
+
+#about-image {
+
+}
+
+#about-image img {
+
+}
+
+
+/* Our Story */
+
+#story {
+
+}
+
+#story-images {
+
+}
+
+#story-images img {
+
+}
+
+#story #our-story {
+
+}
+
+#story #our-story h2 {
+
+}
+
+#story #our-story p {
+
+}
+
+#story #our-story a {
+
+}
+
+#values-image {
+
+}
+
+#values-image img {
+
+}
+
+
+/* =========================
+   ARTISTS PAGE
+   ========================= */
+
+#vision {
+
+}
+
+#one-vision {
+
+}
+
+#one-vision h1 {
+
+}
+
+#one-vision h3 {
+
+}
+
+#vision #about-image {
+
+}
+
+#vision #about-image img {
+
+}
+
+
+/* Meet The Artists */
+
+#voice {
+
+}
+
+#voice h2 {
+
+}
+
+#voice > p {
+
+}
+
+#artists-links {
+
+}
+
+#artists-links a {
+
+}
+
+#voice-card {
+
+}
+
+.voice-cards {
+
+}
+
+.voice-cards img {
+
+}
+
+.voice-cards h4 {
+
+}
+
+.voice-cards p {
+
+}
+
+.voice-cards span {
+
+}
+
+.voice-cards a {
+
+}
+
+
+/* Talent */
+
+#talent {
+
+}
+
+#talent h2 {
+
+}
+
+#talent p {
+
+}
+
+#talents-image {
+
+}
+
+#talents-image img {
+
+}
+
+
+/* =========================
+   GALLERY PAGE
+   ========================= */
+
+#gallery {
+
+}
+
+#gallery-info {
+
+}
+
+#gallery-info h2 {
+
+}
+
+#gallery-info h3 {
+
+}
+
+#gallery-info p {
+
+}
+
+
+/* Gallery Images */
+
+#group {
+
+}
+
+#studio-image {
+
+}
+
+#studio-image img {
+
+}
+
+#studio-image p {
+
+}
+
+#music-image {
+
+}
+
+#music-image img {
+
+}
+
+#music-image p {
+
+}
+
+#together-image {
+
+}
+
+#together-image img {
+
+}
+
+#together-image p {
+
+}
+
+#outdoor-image {
+
+}
+
+#outdoor-image img {
+
+}
+
+#outdoor-image p {
+
+}
+
+#stage-image {
+
+}
+
+#stage-image img {
+
+}
+
+#stage-image p {
+
+}
+
+
+/* =========================
+   EVENTS PAGE
+   ========================= */
+
+#live {
+
+}
+
+#live-info {
+
+}
+
+#live-info h1 {
+
+}
+
+#live-info p {
+
+}
+
+#tour-image {
+
+}
+
+#tour-image img {
+
+}
+
+
+/* Upcoming Shows */
+
+#tour {
+
+}
+
+#tour-info {
+
+}
+
+#tour-info h2 {
+
+}
+
+#tour-info > p {
+
+}
+
+#tour-dates {
+
+}
+
+.tour {
+
+}
+
+.tour p {
+
+}
+
+.tour a {
+
+}
+
+#year {
+
+}
+
+.show-city {
+
+}
+
+.tour-time {
+
+}
+
+#tour-line1 {
+
+}
+
+#tour-line2 {
+
+}
+
+#tour-line3 {
+
+}
+
+#tour-line4 {
+
+}
+
+
+/* Past Events */
+
+#later {
+
+}
+
+#later h2 {
+
+}
+
+#later p {
+
+}
+
+#later a {
+
+}
+
+#view-galleryimage {
+
+}
+
+#view-galleryimage img {
+
+}
+
+#book {
+
+}
+
+#book p {
+
+}
+
+#book a {
+
+}
+
+
+/* =========================
+   MUSIC PAGE
+   ========================= */
+
+#music-hero {
+
+}
+
+#music-hero-text {
+
+}
+
+#music-hero-text p {
+
+}
+
+#music-hero-text h2 {
+
+}
+
+#music-hero-image {
+
+}
+
+#music-hero-image img {
+
+}
+
+
+/* Featured Release */
+
+#featured-release {
+
+}
+
+#featured-image {
+
+}
+
+#featured-image h2 {
+
+}
+
+#featured-image img {
+
+}
+
+#featured-info {
+
+}
+
+#featured-info h2 {
+
+}
+
+#featured-info p {
+
+}
+
+#music-player {
+
+}
+
+#music-player #play-button {
+
+}
+
+#song {
+
+}
+
+
+/* Track List */
+
+#track-list {
+
+}
+
+.track {
+
+}
+
+.track span {
+
+}
+
+
+/* Albums */
+
+#albums {
+
+}
+
+#albums h2 {
+
+}
+
+#album-container {
+
+}
+
+.album {
+
+}
+
+.album img {
+
+}
+
+.album h3 {
+
+}
+
+.album p {
+
+}
+
+.music-button {
+
+}
+
+
+/* Release Archive */
+
+#release-archive {
+
+}
+
+#release-archive h2 {
+
+}
+
+.release {
+
+}
+
+.release span {
+
+}
+
+#release-archive .music-button {
+
+}
+
+
+/* =========================
+   BOOKING PREVIEW PAGE
+   ========================= */
+
+#booking {
+
+}
+
+#booking-info {
+
+}
+
+#booking-info h3 {
+
+}
+
+#booking-info h1 {
+
+}
+
+#booking-info p {
+
+}
+
+#book-unisoghn {
+
+}
+
+#book-unisoghn img {
+
+}
+
+
+/* Request Form */
+
+#request {
+
+}
+
+#request-info {
+
+}
+
+#request-info h2 {
+
+}
+
+#request-info p {
+
+}
+
+#request-form {
+
+}
+
+.input {
+
+}
+
+.input label {
+
+}
+
+.input input {
+
+}
+
+#send-request {
+
+}
+
+#send-request a {
+
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+#footer {
+
+}
+
+#footer-logo-image {
+
+}
+
+#footer-logo-image img {
+
+}
+
+#footer-links {
+
+}
+
+#footer-links a {
+
+}
+
+
+/* Newsletter */
+
+#newsletter {
+
+}
+
+#newsletter-info {
+
+}
+
+#newsletter-info h4 {
+
+}
+
+#newsletter-info h2 {
+
+}
+
+#newsletter-info p {
+
+}
+
+#newsletter-form {
+
+}
+
+#newsletter-form input {
+
+}
+
+#newsletter-form button {
+
+}
+
+#footer > p {
+
+}
+
+
+/* =========================
+   SMALLER RESOLUTIONS
+   ========================= */
+
+@media only screen and (max-width: 768px) {
+
+    /* Structure */
+
+
+    /* Header / Navigation */
+
+
+    /* Home Page */
+
+
+    /* About Page */
+
+
+    /* Artists Page */
+
+
+    /* Gallery Page */
+
+
+    /* Events Page */
+
+
+    /* Music Page */
+
+
+    /* Booking Preview Page */
+
+
+    /* Footer */
+
+}
