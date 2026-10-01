@@ -23,3 +23,28 @@ wavesurfer.on("play", () => {
 wavesurfer.on("pause", () => {
     playButton.textContent = "▶";
 });
+
+
+
+
+
+
+
+
+const song = document.getElementById("song");
+const playButton = document.getElementById("play-button");
+
+playButton.onclick = () => {
+
+    if (song.paused) {
+
+        song.play();
+        playButton.textContent = "❚❚";
+
+    } else {
+
+        song.pause();
+        playButton.textContent = "▶";
+    }
+
+};
