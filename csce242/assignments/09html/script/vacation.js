@@ -1,0 +1,17 @@
+class Vacation {
+    constructor(title, type, description, thingsToDo, image, mapSrc) {
+        this.title = title;
+        this.type = type;
+        this.description = description;
+        this.thingsToDo = thingsToDo;
+        this.image = image;
+        this.mapSrc = mapSrc;
+    }
+
+    get card() {
+        const section = document.createElement("section");
+        section.classList.add("vacation");
+
+        return section;
+    }
+}
