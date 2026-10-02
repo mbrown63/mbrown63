@@ -1,10 +1,146 @@
-class Vacation {
-    constructor(title, type, description, thingsToDo, image, mapSrc) {
-        this.title = title;
-        this.type = type;
-        this.description = description;
-        this.thingsToDo = thingsToDo;
-        this.image = image;
-        this.mapSrc = mapSrc;
+:root {
+    --background: #FAF1E8;
+    --headings: #536F73;
+    --vacation-bg: #6F85B5;
+    --vacation-text: #FFFFFF;
+    --sub-heading: #D78F8F;
+    --modal-bg: #D7E7F3;
+    --modal-text: #536FA8;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    padding: 0px;
+    margin: 0px;
+}
+
+#main-header h1 {
+    color: var(--headings);
+    text-align: center;
+    margin: 20px 0px;
+}
+
+main > h2 {
+    color: var(--sub-heading);
+    text-align: center;
+    margin: 20px 0px 30px;
+}
+
+#vacations {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+}
+
+.vacation {
+    background-color: var(--vacation-bg);
+    color: var(--vacation-text);
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.vacation h2 {
+    color: var(--vacation-text);
+    margin: 15px 0px 5px;
+}
+
+.vacation p {
+    margin: 0px;
+    padding: 5px 0px 15px;
+}
+
+.vacation img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.vacation-modal-content {
+    width: 90%;
+    background-color: var(--modal-bg);
+    padding: 25px;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: var(--modal-text);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modal-body {
+    display: block;
+}
+
+.modal-body iframe {
+    width: 100%;
+    height: 300px;
+    border: 0px;
+}
+
+.modal-info {
+    color: var(--modal-text);
+    padding: 10px;
+}
+
+.modal-info h2 {
+    color: var(--modal-text);
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.modal-info p {
+    font-size: 16px;
+    margin: 15px 0px;
+}
+
+footer {
+    color: var(--headings);
+    text-align: center;
+    margin: 20px 0px;
+}
+
+@media (min-width: 1000px) {
+
+    #content {
+        width: 90%;
+        margin: auto;
+    }
+
+    #vacations {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 20px 0px 40px;
+    }
+
+    .vacation-modal-content {
+        width: 70%;
+    }
+
+    .modal-body {
+        display: flex;
+    }
+
+    .modal-body iframe {
+        width: 50%;
+        height: 400px;
+    }
+
+    .modal-info {
+        width: 50%;
+        padding: 10px 20px;
+    }
+
+    .modal-info h2 {
+        text-align: left;
+        margin-top: 5px;
     }
 }
