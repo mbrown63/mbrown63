@@ -13,6 +13,7 @@ class Vacation {
         section.classList.add("vacation");
 
         section.appendChild(this.vacationTitle());
+        section.appendChild(this.vacationType());
         section.appendChild(this.vacationImage());
 
         section.onclick = () => {
@@ -27,6 +28,13 @@ class Vacation {
         h2.textContent = this.title;
 
         return h2;
+    }
+
+    vacationType() {
+        const p = document.createElement("p");
+        p.textContent = `${this.type} Vacation`;
+        
+        return p;
     }
 
     vacationImage() {

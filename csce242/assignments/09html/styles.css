@@ -1,7 +1,7 @@
 :root {
     --background: #FAF1E8;
     --headings: #536F73;
-    --vacation-bg: #6F85B5;
+    --vacation-bg: #4663ac;
     --vacation-text: #FFFFFF;
     --sub-heading: #D78F8F;
     --modal-bg: #D7E7F3;
@@ -85,6 +85,7 @@ main > h2 {
     width: 100%;
     height: 300px;
     border: 0px;
+    padding: 20px;
 }
 
 .modal-info {
