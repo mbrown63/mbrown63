@@ -1,4 +1,3 @@
-/* Structure */
 :root {
     --black: #080706;
     --red: #b51f1f;
@@ -8,6 +7,10 @@
     --light-cream: #f0dfca;
     --white: #ffffff;
     --button: #fb4736;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -26,7 +29,8 @@ body {
     background-color: var(--black);
     display: flex;
     align-items: center;
-    padding: 15px 40px;
+    padding: 12px 40px;
+    min-height: 70px;
 }
 
 #logo-image {
@@ -34,7 +38,8 @@ body {
 }
 
 #logo-image img {
-    width:150px;
+    width: 150px;
+    display: block;
 }
 
 #nav-toggle {
@@ -46,41 +51,44 @@ body {
 }
 
 #main-nav ul {
-display: flex;
+    display: flex;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 #main-nav li {
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 #main-nav a {
     color: var(--white);
     text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
-.columns {
-
+#main-nav a:hover {
+    color: var(--bright-red);
 }
 
 #social-icons {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 18px;
 }
 
 #social-icons a {
     color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
 }
 
 /* Hero */
-
-/* Hero */
-
 #hero {
     display: flex;
     background-color: var(--black);
@@ -89,7 +97,7 @@ display: flex;
 
 #hero-info {
     width: 35%;
-    padding-left: 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,18 +105,24 @@ display: flex;
 
 #hero-info p {
     letter-spacing: 5px;
+    line-height: 1.7;
+    margin: 0;
+    font-size: 14px;
 }
 
 #hero-info h1 {
-    font-size: 75px;
-    margin: 10px 0;
+    font-size: 72px;
+    margin: 15px 0 5px;
     transform: rotate(-4deg);
+    line-height: 1;
 }
 
 #hero-info h3 {
     letter-spacing: 8px;
-    margin-top: 0;
-    padding-left: 215px;
+    margin: 0;
+    padding-left: 160px;
+    font-size: 16px;
+    white-space: nowrap;
 }
 
 #hero-info a {
@@ -117,7 +131,8 @@ display: flex;
     text-decoration: none;
     padding: 15px 25px;
     width: fit-content;
-    margin-top: 20px;
+    margin-top: 35px;
+    font-size: 13px;
 }
 
 #hero-image {
@@ -127,146 +142,179 @@ display: flex;
 #hero-image img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
 }
 
 
 /* The Voices */
-
 #middle {
     display: flex;
+    align-items: stretch;
     background-color: var(--light-cream);
     color: var(--black);
 }
 
 #artists-section {
-    width: 60%;
-    padding: 20px;
+    width: 38%;
+    padding: 25px;
+    position: relative;
 }
 
-#middle h2 {
-    font-size: 14px;
-    margin: 0;
+#artists-section h2 {
+    color: var(--red);
+    font-size: 12px;
+    margin: 0 0 5px;
 }
 
-#middle h3 {
-    font-size: 35px;
-    margin: 5px 0;
+#artists-section h3 {
+    font-size: 28px;
+    margin: 5px 0 15px;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
-#middle a {
-    color: var(--black);
+#artists-section > a {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    color: var(--red);
     text-decoration: none;
+    font-size: 11px;
 }
 
 #voice-cards {
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
-    width: 70%
+    gap: 7px;
+    width: 100%;
 }
 
 .voice-card {
     flex: 1;
+    min-width: 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .voice-card img {
     width: 100%;
-    height: 230px;
+    height: 180px;
+    display: block;
     object-fit: cover;
 }
 
 .voice-card h4 {
-    margin: 8px 0 3px;
+    margin: 10px 8px 4px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 .voice-card p {
-    margin: 0;
-    font-size: 13px;
+    margin: 0 8px 15px;
+    font-size: 10px;
 }
 
-#voice-cards a {
+#voice-cards > a {
     flex-basis: 100%;
+    margin-top: 5px;
+    color: var(--red);
+    text-decoration: none;
+    font-size: 10px;
 }
 
 
 /* The Sound */
-
-#sound-top {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
 #the-sound {
+    width: 30%;
     background-color: var(--black);
     color: var(--white);
     padding: 20px;
-    width: 40%;
-}
-
-#the-sound p {
-    margin: 5px 0;
-}
-
-#the-sound h1 {
-    font-size: 35px;
-    margin: 10px 0;
-}
-
-#the-sound a {
-    color: var(--white);
-    text-decoration: none;
 }
 
 #sound-top {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 15px;
 }
 
 #sound-info {
     flex: 1;
 }
 
+#sound-info > p:first-child {
+    color: var(--bright-red);
+    font-size: 11px;
+}
+
+#the-sound p {
+    margin: 5px 0;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+#the-sound h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    margin: 5px 0 10px;
+}
+
+#the-sound a {
+    display: inline-block;
+    color: var(--white);
+    background-color: var(--dark-red);
+    text-decoration: none;
+    padding: 11px 18px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
 #album-cover-image {
-    width: 45%;
-    margin-top: 15px;
+    width: 43%;
 }
 
 #album-cover-image img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Make the width and height the same.*/
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    display: block;
 }
 
 #audio-player {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
 #play-button {
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
 #waveform {
-    flex:1;
+    flex: 1;
+    min-width: 0;
+    height: 30px;
 }
 
-
 /* Music List */
-
 #music-list {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 .music {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
+    min-height: 27px;
+}
+
+.music p {
+    font-size: 10px;
 }
 
 .music-name {
@@ -299,311 +347,554 @@ display: flex;
 
 
 /* Gallery Preview */
-
 #pictures {
-
+    width: 32%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--light-cream);
+    color: var(--black);
 }
 
 #picture-gallery {
-
+    width: 55%;
 }
 
-#picture-gallery p {
-
+#picture-gallery > p:first-child {
+    color: var(--red);
+    font-size: 11px;
+    margin: 0 0 5px;
 }
 
 #picture-gallery h2 {
+    color: var(--black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    margin: 5px 0 15px;
+}
 
+#picture-gallery p {
+    font-size: 11px;
+    line-height: 1.5;
 }
 
 #picture-gallery a {
-
+    display: inline-block;
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 11px 17px;
+    margin-top: 8px;
+    font-size: 10px;
 }
 
 .polaroid {
-
+    width: 45%;
+    background-color: #f8ead8;
+    padding: 10px 10px 18px;
+    transform: rotate(3deg);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
 
 .polaroid img {
-
+    width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: cover;
 }
 
 .polaroid p {
-
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
 }
 
-
 /* Events Preview */
-
 #events {
-
+    display: flex;
+    align-items: stretch;
+    background-color: var(--black);
+    color: var(--white);
+    min-height: 240px;
 }
 
 #events-info {
-
+    width: 58%;
+    min-height: 300px;
+    padding: 25px 30px;
+    background-image: url("images/eventsimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#events-info p {
-
+#events-info > p:first-child {
+    color: var(--bright-red);
+    font-size: 11px;
+    margin: 0;
 }
 
 #events-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    margin: 5px 0 8px;
+}
 
+#events-info > p {
+    font-size: 11px;
+    line-height: 1.5;
 }
 
 #events-info a {
-
+    display: inline-block;
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 11px 17px;
+    margin: 5px 0 15px;
+    font-size: 10px;
 }
 
 #event-line {
-
+    border-top: 3px solid #000000;
 }
 
 .event {
-
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #000000;
+    min-height: 28px;
+    gap: 15px;
 }
 
 .event p {
+    margin: 0;
+    font-size: 9px;
+}
 
+.event p:first-child {
+    width: 50px;
 }
 
 .event-city {
+    flex: 1;
+}
 
+.event p:nth-child(3) {
+    flex: 1;
+}
+
+.event p:last-child {
+    text-align: right;
+    width: 50px;
 }
 
 #events-image {
-
+    width: 22%;
+    overflow: hidden;
 }
 
 #events-image img {
-
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 
 /* Booking Preview */
-
-#planing {
-
+#plan {
+    width: 42%;
+    min-height: 240px;
+    padding: 30px;
+    background-image: url("images/planningimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
 }
 
-#planing p {
-
+#plan > p:first-child {
+    color: var(--bright-red);
+    font-size: 11px;
+    margin: 0;
 }
 
-#planing h1 {
-
+#plan h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    margin: 5px 0 12px;
 }
 
-#planing a {
+#plan p {
+    font-size: 10px;
+    line-height: 1.6;
+}
 
+#plan a {
+    width: fit-content;
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 11px 20px;
+    margin-top: 8px;
+    font-size: 10px;
+}
+
+#planning-image {
+    width: 17%;
+    overflow: hidden;
+}
+
+#planning-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 
 /* Our Story Preview */
-
-#our-story-image {
-
+#story-preview {
+    display: flex;
+    background-color: var(--light-cream);
+    color: var(--black);
+    min-height: 280px;
 }
 
-#our-story-image img {
-
+#home-story-image {
+    width: 90%;
 }
 
-#our-story {
-
+#home-story-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
-#our-story p {
-
+#home-story {
+    width: 35%;
+    padding: 35px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light-cream);
 }
 
-#our-story h2 {
-
+#home-story > p:first-child {
+    color: var(--red);
+    font-size: 11px;
+    margin: 0;
 }
 
-#our-story a {
-
+#home-story h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 29px;
+    margin: 6px 0 12px;
 }
 
+#home-story p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 5px 0;
+}
 
-/* =========================
-   ABOUT PAGE
-   ========================= */
+#home-story a {
+    width: fit-content;
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+    font-size: 10px;
+}
 
+/* About */
 #about {
-
+    min-height: 430px;
+    background-image: url("images/aboutimage.jpg");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 #about-header {
-
+    width: 42%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotate(-5deg);
 }
 
 #about-header h1 {
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 70px;
+    line-height: .9;
+    margin: 0;
 }
 
 #about-header h1 span {
-
+    color: var(--bright-red);
+    font-size: 38px;
 }
 
 #about-header h2 {
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 1.5;
 }
 
 #about-image {
-
+    width: 58%;
 }
 
 #about-image img {
-
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
-
 /* Our Story */
-
 #story {
-
+    display: flex;
+    background-color: var(--light-cream);
+    color: var(--black);
+    min-height: 350px;
 }
 
 #story-images {
-
+    width: 40%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #story-images img {
-
+    width: 60%;
+    height: 250px;
+    object-fit: cover;
+    border: 10px solid #f7ead8;
+    transform: rotate(3deg);
+    box-shadow: 0 3px 8px rgba(0,0,0,.25);
 }
 
-#story #our-story {
-
+#our-story {
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #story #our-story h2 {
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    margin: 0 0 15px;
 }
 
 #story #our-story p {
-
+    font-size: 13px;
+    line-height: 1.6;
 }
 
 #story #our-story a {
-
+    width: fit-content;
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 22px;
 }
 
 #values-image {
-
+    width: 100%;
+    background-color: var(--black);
 }
 
 #values-image img {
-
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
+/* ARTISTS PAGE */
 
-/* =========================
-   ARTISTS PAGE
-   ========================= */
-
+/* Artists Hero */
 #vision {
-
+    min-height: 430px;
+    background-image: url("images/aboutimage.jpg");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
 }
 
 #one-vision {
-
+    width: 42%;
+    min-height: 430px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotate(-4deg);
 }
 
 #one-vision h1 {
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 65px;
+    line-height: .9;
+    margin: 0;
 }
 
 #one-vision h3 {
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    margin: 25px 0 0;
 }
 
-#vision #about-image {
-
-}
-
-#vision #about-image img {
-
-}
-
-
-/* Meet The Artists */
-
+/* The Artists */
 #voice {
-
+    background-color: var(--light-cream);
+    color: var(--black);
+    padding: 30px 40px;
+    position: relative;
 }
 
 #voice h2 {
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 60px;
+    margin: 0 0 5px;
 }
 
-#voice > p {
-
+#voice p {
+    font-size: 15px;
 }
 
 #artists-links {
-
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    gap: 12px;
 }
 
 #artists-links a {
-
+    color: var(--black);
+    text-decoration: none;
+    font-size: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cdbba6;
 }
 
 #voice-card {
-
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 .voice-cards {
-
+    width: 25%;
+    border: 1px solid #cdbba6;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
 }
 
 .voice-cards img {
-
+    width: 100%;
+    height: 330px;
+    display: block;
+    object-fit: cover;
 }
 
 .voice-cards h4 {
-
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 10px 10px 3px;
 }
 
 .voice-cards p {
-
+    font-size: 10px;
+    margin: 0 10px 10px;
 }
 
 .voice-cards span {
-
+    display: none;
 }
 
 .voice-cards a {
-
+    display: inline-block;
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: auto 10px 0;
+    font-size: 9px;
 }
 
 
-/* Talent */
-
+/* Different Talents */
 #talent {
-
-}
-
-#talent h2 {
-
-}
-
-#talent p {
-
+    display: flex;
+    background-color: var(--light-cream);
+    color: var(--black);
+    min-height: 250px;
 }
 
 #talents-image {
-
+    width: 55%;
 }
 
 #talents-image img {
-
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
+#talent-info {
+    width: 45%;
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-/* =========================
-   GALLERY PAGE
-   ========================= */
+#talent-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    margin: 0 0 10px;
+}
+
+#talent-info p {
+    font-size: 11px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+#talent-info a {
+    width: fit-content;
+    background-color: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 11px 20px;
+    font-size: 10px;
+}
+
+/* GALLERY PAGE */
 
 #gallery {
 
@@ -693,9 +984,7 @@ display: flex;
 }
 
 
-/* =========================
-   EVENTS PAGE
-   ========================= */
+/* EVENTS PAGE */
 
 #live {
 
@@ -824,9 +1113,7 @@ display: flex;
 }
 
 
-/* =========================
-   MUSIC PAGE
-   ========================= */
+/* MUSIC PAGE */
 
 #music-hero {
 
@@ -1045,103 +1332,428 @@ display: flex;
 }
 
 
-/* =========================
-   FOOTER
-   ========================= */
-
+/* Footer */
 #footer {
-
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px 40px;
+    gap: 30px;
+    min-height: 100px;
 }
 
 #footer-logo-image {
-
+    width: 150px;
 }
 
 #footer-logo-image img {
-
+    width: 100%;
+    display: block;
 }
 
 #footer-links {
-
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 #footer-links a {
-
+    color: var(--white);
+    text-decoration: none;
+    font-size: 10px;
 }
-
 
 /* Newsletter */
-
 #newsletter {
-
-}
-
-#newsletter-info {
-
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-left: 1px solid var(--red);
+    padding-left: 25px;
 }
 
 #newsletter-info h4 {
-
+    color: var(--bright-red);
+    font-size: 9px;
+    margin: 0;
 }
 
 #newsletter-info h2 {
-
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    margin: 3px 0;
 }
 
 #newsletter-info p {
-
+    font-size: 9px;
+    margin: 0;
 }
 
 #newsletter-form {
-
+    display: flex;
 }
 
 #newsletter-form input {
-
+    width: 160px;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid #555555;
+    padding: 10px;
+    outline: none;
+    font-size: 9px;
 }
 
 #newsletter-form button {
-
+    width: 35px;
+    border: none;
+    background-color: var(--dark-red);
+    color: var(--white);
+    cursor: pointer;
 }
 
 #footer > p {
-
+    font-size: 8px;
+    line-height: 1.6;
+    text-align: right;
 }
 
+@media only screen and (max-width: 1000px) {
 
-/* =========================
-   SMALLER RESOLUTIONS
-   ========================= */
+    /* Header */
+    #main-header {
+        padding: 15px 25px;
+        flex-wrap: wrap;
+    }
 
-@media only screen and (max-width: 768px) {
+    #logo-image {
+        flex: 1;
+    }
 
-    /* Structure */
+    #logo-image img {
+        width: 130px;
+    }
 
+    #nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--white);
+        font-size: 25px;
+        cursor: pointer;
+    }
 
-    /* Header / Navigation */
+    #main-nav {
+        flex-basis: 100%;
+    }
 
+    #main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
 
-    /* Home Page */
+    #main-nav li {
+        padding: 8px 0;
+    }
 
+    #social-icons {
+        display: none;
+    }
 
+    /* Hero */
+    #hero {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    #hero-info {
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    #hero-info h1 {
+        font-size: 55px;
+    }
+
+    #hero-info h3 {
+        padding-left: 0;
+        font-size: 14px;
+        letter-spacing: 6px;
+    }
+
+    #hero-image {
+        width: 100%;
+        height: 450px;
+    }
+
+    #hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Middle */
+    #middle {
+        flex-direction: column;
+    }
+
+    /* Artists */
+    #artists-section {
+        width: 100%;
+        padding: 30px;
+    }
+
+    #artists-section > a {
+        top: 40px;
+        right: 30px;
+    }
+
+    #voice-cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .voice-card {
+        width: 100%;
+    }
+
+    .voice-card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    #voice-cards > a {
+        grid-column: 1 / -1;
+    }
+
+    /* The Sound */
+    #the-sound {
+        width: 100%;
+        padding: 30px;
+    }
+
+    #sound-top {
+        gap: 25px;
+    }
+
+    #sound-info {
+        width: 55%;
+    }
+
+    #album-cover-image {
+        width: 40%;
+    }
+
+    #album-cover-image img {
+        width: 100%;
+    }
+
+    #audio-player {
+        width: 100%;
+    }
+
+    #music-list {
+        width: 100%;
+    }
+
+    /* Gallery */
+    #pictures {
+        width: 100%;
+        padding: 35px 30px;
+        gap: 30px;
+    }
+
+    #picture-gallery {
+        width: 50%;
+    }
+
+    .polaroid {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .polaroid img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* Events */
+    #events {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    #events-info {
+        width: 100%;
+        padding: 35px 30px;
+    }
+
+    .event {
+        width: 100%;
+    }
+
+    #events-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    #events-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Booking */
+    #plan {
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+    #planning-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    #planning-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Our Story */
+    #story-preview {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    #our-story-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    #our-story-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #our-story {
+        width: 100%;
+        padding: 40px 30px;
+    }
+    
     /* About Page */
+    #about {
+        flex-direction: column;
+        min-height: 0;
+    }
 
+    #about-header {
+        width: 100%;
+        padding: 50px 30px;
+    }
 
-    /* Artists Page */
+    #about-header h1 {
+        font-size: 55px;
+    }
 
+    #about-header h1 span {
+        font-size: 32px;
+    }
 
-    /* Gallery Page */
+    #about-header h2 {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
 
+    #about-image {
+        width: 100%;
+        height: 400px;
+    }
 
-    /* Events Page */
+    #about-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
+    /* Our Story */
+    #story {
+        flex-direction: column;
+    }
 
-    /* Music Page */
+    #story #our-story {
+        order: 1;
+        width: 100%;
+        padding: 40px 30px;
+    }
 
+    #story-images {
+        order: 2;
+        width: 100%;
+        padding: 30px;
+    }
 
-    /* Booking Preview Page */
+    #story-images img {
+        width: 80%;
+        height: auto;
+        max-height: 400px;
+    }
 
+    #values-image {
+        width: 100%;
+    }
+
+    #values-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
     /* Footer */
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 25px;
+    }
 
+    #footer-logo-image {
+        width: 140px;
+    }
+
+    #footer-links {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #newsletter {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid var(--red);
+        padding: 25px 0 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #newsletter-form {
+        width: 100%;
+    }
+
+    #newsletter-form input {
+        flex: 1;
+        width: auto;
+    }
+
+    #footer > p {
+        text-align: left;
+    }
 }
