@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 :root {
     --black: #080706;
     --red: #b51f1f;
@@ -6,11 +7,14 @@
     --cream: #e8d5bd;
     --light-cream: #f0dfca;
     --white: #ffffff;
-    --button: #fb4736;
 }
 
 * {
     box-sizing: border-box;
+}
+
+#hero-info h1 {
+    font-family: "Permanent Marker", cursive;
 }
 
 body {
@@ -295,9 +299,8 @@ body {
 }
 
 #waveform {
-    flex: 1;
-    min-width: 0;
-    height: 30px;
+    width: 90%;
+    height: 50px;
 }
 
 /* Music List */
@@ -438,19 +441,6 @@ body {
     font-size: 10px;
 }
 
-#events-image {
-    width: 22%;
-    overflow: hidden;
-}
-
-#events-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-
 /* Booking Preview */
 #plan {
     width: 42%;
@@ -492,19 +482,6 @@ body {
     margin-top: 8px;
     font-size: 10px;
 }
-
-#planning-image {
-    width: 17%;
-    overflow: hidden;
-}
-
-#planning-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
 
 /* Our Story Preview */
 #story-preview {
@@ -569,7 +546,6 @@ body {
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 #about-header {
@@ -598,17 +574,6 @@ body {
     font-size: 18px;
     letter-spacing: 4px;
     line-height: 1.5;
-}
-
-#about-image {
-    width: 58%;
-}
-
-#about-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
 }
 
 /* Our Story */
@@ -846,10 +811,6 @@ body {
     background-color: var(--light-cream);
     color: var(--black);
     padding: 45px 4% 25px;
-}
-
-#gallery-info {
-    position: relative;
 }
 
 #gallery-info h2 {
@@ -1296,6 +1257,16 @@ body {
     width: 100%;
 }
 
+#player-bar {
+    width: 100%;
+    height: 50px;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+}
+
 #play-button {
     width: 35px;
     height: 35px;
@@ -1306,17 +1277,16 @@ body {
     cursor: pointer;
 }
 
-#player-bar {
-    width: 100%;
-    height: 50px;
-    background-color: var(--black);
-    display: flex;
-    align-items: center;
-    padding: 8px 12px;
+#current-time, #total-time {
+    color: var(--white);
+    font-size: 10px;
+    white-space: nowrap;
 }
 
-#song {
-    display: none;
+#music-waveform {
+    flex: 1;
+    min-width: 0;
+    height: 35px;
 }
 
 /* Track List */
@@ -1442,84 +1412,6 @@ body {
     margin-top: 20px;
 }
 
-
-
-/* =========================
-   BOOKING PREVIEW PAGE
-   ========================= */
-
-#booking {
-
-}
-
-#booking-info {
-
-}
-
-#booking-info h3 {
-
-}
-
-#booking-info h1 {
-
-}
-
-#booking-info p {
-
-}
-
-#book-unisoghn {
-
-}
-
-#book-unisoghn img {
-
-}
-
-
-/* Request Form */
-
-#request {
-
-}
-
-#request-info {
-
-}
-
-#request-info h2 {
-
-}
-
-#request-info p {
-
-}
-
-#request-form {
-
-}
-
-.input {
-
-}
-
-.input label {
-
-}
-
-.input input {
-
-}
-
-#send-request {
-
-}
-
-#send-request a {
-
-}
-
-
 /* Footer */
 #footer {
     display: flex;
@@ -1608,20 +1500,630 @@ body {
     text-align: right;
 }
 
-@media only screen and (max-width: 1000px) {
+/* PREVIEW PAGES */
+#story-hero {
+    min-height: 430px;
+    background-image: url("images/story-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-    /* Header */
+#story-hero-info {
+    width: 38%;
+    min-height: 430px;
+    padding: 45px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#story-hero-info > p {
+    color: var(--bright-red);
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin: 0 0 12px;
+}
+
+#story-hero-info h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 65px;
+    line-height: .85;
+    margin: 0 0 20px;
+}
+
+#story-hero-info h1 span {
+    color: var(--red);
+}
+
+#story-hero-info h3 {
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+#full-story {
+    min-height: 400px;
+    background-color: var(--light-cream);
+    color: var(--black);
+    padding: 45px 6%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+#story-polaroid {
+    width: 45%;
+    background-color: #f8ead8;
+    padding: 15px 15px 35px;
+    transform: rotate(-3deg);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+#story-polaroid img {
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+}
+
+#story-polaroid p {
+    color: var(--black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+#story-text {
+    width: 55%;
+}
+
+#story-text h4 {
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin: 0 0 10px;
+}
+
+#story-text h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+#story-text p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 18px;
+}
+
+#story-ending {
+    font-weight: bold;
+}
+
+#malik-hero {
+    min-height: 430px;
+    background-image: url("images/malik-hero.jpg");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+#malik-hero-info {
+    width: 38%;
+    min-height: 430px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#malik-hero-info > p {
+    color: var(--bright-red);
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin: 0 0 12px;
+}
+
+#malik-hero-info h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 80px;
+    line-height: 1;
+    margin: 0 0 15px;
+}
+
+#malik-hero-info h3 {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+#malik-story {
+    min-height: 400px;
+    background-color: var(--light-cream);
+    color: var(--black);
+    padding: 45px 6%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+#malik-polaroid {
+    width: 45%;
+    background-color: #f8ead8;
+    padding: 15px 15px 35px;
+    transform: rotate(-3deg);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+#malik-polaroid img {
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+}
+
+#malik-polaroid p {
+    color: var(--black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+#malik-info {
+    width: 55%;
+}
+
+#malik-info h4 {
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin: 0 0 10px;
+}
+
+#malik-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 55px;
+    line-height: 1;
+    margin: 0 0 15px;
+}
+
+#malik-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+#aria-hero {
+    min-height: 430px;
+    background-image: url("images/aria-hero.jpg");
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+}
+
+#aria-hero-info {
+    width: 38%;
+    min-height: 430px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#aria-hero-info > p {
+    color: var(--bright-red);
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin: 0 0 12px;
+}
+
+#aria-hero-info h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 80px;
+    line-height: 1;
+    margin: 0 0 15px;
+}
+
+#aria-hero-info h3 {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+#aria-story {
+    min-height: 400px;
+    background-color: var(--light-cream);
+    color: var(--black);
+    padding: 45px 6%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+#aria-polaroid {
+    width: 45%;
+    background-color: #f8ead8;
+    padding: 15px 15px 35px;
+    transform: rotate(-3deg);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+#aria-polaroid img {
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+}
+
+#aria-polaroid p {
+    color: var(--black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+#aria-info {
+    width: 55%;
+}
+
+#aria-info h4 {
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin: 0 0 10px;
+}
+
+#aria-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 55px;
+    line-height: 1;
+    margin: 0 0 15px;
+}
+
+#aria-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+#jordan-hero {
+    min-height: 430px;
+    background-image: url("images/jordan-hero.jpg");
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+}
+
+#jordan-hero-info {
+    width: 38%;
+    min-height: 430px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#jordan-hero-info > p {
+    color: var(--bright-red);
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin: 0 0 12px;
+}
+
+#jordan-hero-info h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 80px;
+    line-height: 1;
+    margin: 0 0 15px;
+}
+
+#jordan-hero-info h3 {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+#jordan-story {
+    min-height: 400px;
+    background-color: var(--light-cream);
+    color: var(--black);
+    padding: 45px 6%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+#jordan-polaroid {
+    width: 45%;
+    background-color: #f8ead8;
+    padding: 15px 15px 35px;
+    transform: rotate(-3deg);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+#jordan-polaroid img {
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+}
+
+#jordan-polaroid p {
+    color: var(--black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+#jordan-info {
+    width: 55%;
+}
+
+#jordan-info h4 {
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin: 0 0 10px;
+}
+
+#jordan-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 55px;
+    line-height: 1;
+    margin: 0 0 15px;
+}
+
+#jordan-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+#nia-hero {
+    min-height: 430px;
+    background-image: url("images/nia-hero.jpg");
+    background-size: cover;
+    background-position: center 15%;
+    background-repeat: no-repeat;
+}
+
+#nia-hero-info {
+    width: 38%;
+    min-height: 430px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nia-hero-info > p {
+    color: var(--bright-red);
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin: 0 0 12px;
+}
+
+#nia-hero-info h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 80px;
+    line-height: 1;
+    margin: 0 0 15px;
+}
+
+#nia-hero-info h3 {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+#nia-story {
+    min-height: 400px;
+    background-color: var(--light-cream);
+    color: var(--black);
+    padding: 45px 6%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+#nia-polaroid {
+    width: 45%;
+    background-color: #f8ead8;
+    padding: 15px 15px 35px;
+    transform: rotate(-3deg);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+#nia-polaroid img {
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+}
+
+#nia-polaroid p {
+    color: var(--black);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+#nia-info {
+    width: 55%;
+}
+
+#nia-info h4 {
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin: 0 0 10px;
+}
+
+#nia-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 55px;
+    line-height: 1;
+    margin: 0 0 15px;
+}
+
+#nia-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+/* Booking Hero */
+#booking {
+    min-height: 430px;
+    background-image: url("images/booking-hero.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+
+#booking-info {
+    width: 42%;
+    min-height: 430px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#booking-info h3 {
+    color: var(--bright-red);
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin: 0 0 12px;
+}
+
+#booking-info h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 65px;
+    line-height: .9;
+    margin: 0 0 20px;
+}
+
+#booking-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#request {
+    background-color: var(--light-cream);
+    color: var(--black);
+    padding: 50px 6%;
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+#request-info {
+    width: 40%;
+}
+
+#request-info h4 {
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin: 0 0 10px;
+}
+
+#request-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 45px;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+#request-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 18px;
+}
+
+#request-form {
+    width: 60%;
+}
+
+.input {
+    margin-bottom: 18px;
+}
+
+.input label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+.input input {
+    width: 100%;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid #b9a996;
+    padding: 10px;
+    font-size: 12px;
+    outline: none;
+}
+
+.input textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #b9a996;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    resize: none;
+    outline: none;
+}
+
+#send-request {
+    background-color: var(--dark-red);
+    color: var(--white);
+    border: none;
+    padding: 13px 22px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
     #main-header {
-        padding: 15px 25px;
+        padding: 12px 20px;
         flex-wrap: wrap;
     }
 
-    #logo-image {
-        flex: 1;
-    }
-
     #logo-image img {
-        width: 130px;
+        width: 120px;
     }
 
     #nav-toggle {
@@ -1635,23 +2137,402 @@ body {
 
     #main-nav {
         flex-basis: 100%;
+        display: none;
     }
 
-    #main-nav ul {
+    #main-nav.show {
+        display: block;
+    }
+
+    #main-nav.show ul {
         flex-direction: column;
         align-items: center;
-        padding: 15px 0;
+        padding: 12px 0;
+        display: flex;
     }
 
     #main-nav li {
-        padding: 8px 0;
+        padding: 6px 0;
     }
 
     #social-icons {
         display: none;
     }
 
-    /* Hero */
+    #hero {
+        min-height: 400px;
+    }
+
+    #hero-info {
+        width: 35%;
+        padding: 30px;
+    }
+
+    #hero-info h1 {
+        font-size: 50px;
+    }
+
+    #hero-info h3 {
+        padding-left: 50px;
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    #hero-image {
+        width: 65%;
+    }
+
+    #artists-section {
+        padding: 20px;
+    }
+
+    #artists-section h3 {
+        font-size: 22px;
+    }
+
+    #artists-section > a {
+        top: 28px;
+        right: 20px;
+    }
+
+    .voice-card img {
+        height: 140px;
+    }
+
+    #the-sound {
+        padding: 18px;
+    }
+
+    #sound-top {
+        gap: 10px;
+    }
+
+    #the-sound h1 {
+        font-size: 22px;
+    }
+
+    #album-cover-image {
+        width: 40%;
+    }
+
+    #pictures {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    #picture-gallery h2 {
+        font-size: 21px;
+    }
+
+    .polaroid img {
+        height: 125px;
+    }
+
+    #events-info {
+        padding: 25px;
+    }
+
+    #plan {
+        padding: 25px;
+    }
+
+    #home-story {
+        padding: 30px;
+    }
+
+    #home-story h2 {
+        font-size: 25px;
+    }
+
+    #about-header, #one-vision {
+        padding: 35px;
+    }
+
+    #about-header h1, #one-vision h1 {
+        font-size: 50px;
+    }
+
+    #story-images {
+        padding: 25px;
+    }
+
+    #story-images img {
+        width: 75%;
+    }
+
+    #our-story {
+        padding: 30px;
+    }
+
+    #voice {
+        padding: 25px;
+    }
+
+    #voice h2 {
+        font-size: 42px;
+    }
+
+    #artists-links {
+        position: static;
+        margin: 15px 0;
+        gap: 6px;
+    }
+
+    #artists-links a {
+        padding: 9px 10px;
+        font-size: 9px;
+    }
+
+    #voice-card {
+        gap: 8px;
+    }
+
+    .voice-cards img {
+        height: 250px;
+    }
+
+    #talent-info {
+        padding: 35px 30px;
+    }
+
+    #gallery {
+        padding: 35px 4% 20px;
+    }
+
+    #gallery-info h3 {
+        font-size: 45px;
+    }
+
+    #group {
+        gap: 12px;
+        padding: 0 4% 35px;
+    }
+
+    #studio-image, #stage-image {
+        height: 300px;
+    }
+
+    #music-image, #together-image, #outdoor-image {
+        height: 250px;
+    }
+
+    .gallery-caption {
+        padding: 35px 12px 12px;
+    }
+
+    .gallery-caption h4 {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+
+    .gallery-caption p {
+        font-size: 9px;
+    }
+
+    #live {
+        height: 260px;
+    }
+
+    #live-info {
+        height: 260px;
+        padding: 30px;
+    }
+
+    #live-info h1 {
+        font-size: 45px;
+    }
+
+    #tour-info {
+        padding: 25px;
+    }
+
+    #tour-info h2 {
+        font-size: 24px;
+    }
+
+    .tour {
+        gap: 6px;
+    }
+
+    .show-city {
+        width: 100px;
+    }
+
+    .tour a {
+        width: 85px;
+    }
+
+    #later {
+        padding: 45px 20px 20px;
+    }
+
+    #past-events {
+        width: 100%;
+        height: 180px;
+        padding: 20px;
+    }
+
+    #book {
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    #book p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #book a {
+        width: 140px;
+        font-size: 12px;
+    }
+
+    #music-hero {
+        min-height: 380px;
+    }
+
+    #music-hero-text {
+        min-height: 380px;
+        padding: 40px;
+    }
+
+    #music-hero-text h2 {
+        font-size: 55px;
+    }
+
+    #featured-release {
+        padding: 25px 30px;
+        gap: 25px;
+    }
+
+    #featured-image {
+        width: 35%;
+    }
+
+    #featured-info {
+        width: 60%;
+    }
+
+    #featured-image img {
+        max-width: 250px;
+    }
+
+    #albums {
+        padding: 25px 30px;
+    }
+
+    #album-container {
+        gap: 12px;
+    }
+
+    #release-archive {
+        padding: 65px 25px 20px;
+        min-height: 390px;
+    }
+
+    #story-hero, #malik-hero, #aria-hero, #jordan-hero, #nia-hero {
+        min-height: 380px;
+    }
+
+    #story-hero-info, #malik-hero-info, #aria-hero-info, #jordan-hero-info, #nia-hero-info {
+        width: 40%;
+        min-height: 380px;
+        padding: 35px;
+    }
+
+    #story-hero-info h1 {
+        font-size: 52px;
+    }
+
+    #malik-hero-info h1, #aria-hero-info h1, #jordan-hero-info h1, #nia-hero-info h1 {
+        font-size: 60px;
+    }
+
+    #full-story, #malik-story, #aria-story, #jordan-story, #nia-story {
+        padding: 40px 5%;
+        gap: 30px;
+    }
+
+    #story-polaroid, #malik-polaroid, #aria-polaroid, #jordan-polaroid, #nia-polaroid {
+        width: 40%;
+    }
+
+    #story-polaroid img, #malik-polaroid img, #aria-polaroid img, #jordan-polaroid img, #nia-polaroid img {
+        height: 230px;
+    }
+
+    #story-text, #malik-info,  #aria-info, #jordan-info, #nia-info {
+        width: 55%;
+    }
+
+    #story-text h2, #malik-info h2, #aria-info h2, #jordan-info h2, #nia-info h2 {
+        font-size: 40px;
+    }
+
+    #booking {
+        min-height: 380px;
+    }
+
+    #booking-info {
+        width: 45%;
+        min-height: 380px;
+        padding: 40px;
+    }
+
+    #booking-info h1 {
+        font-size: 52px;
+    }
+
+    #request {
+        padding: 40px 5%;
+        gap: 40px;
+    }
+
+    #request-info {
+        width: 35%;
+    }
+
+    #request-form {
+        width: 60%;
+    }
+
+    #request-info h2 {
+        font-size: 38px;
+    }
+
+    #footer {
+        padding: 18px 25px;
+        gap: 15px;
+    }
+
+    #footer-logo-image {
+        width: 110px;
+    }
+
+    #footer-links {
+        gap: 12px;
+    }
+
+    #newsletter {
+        gap: 10px;
+        padding-left: 12px;
+    }
+
+    #newsletter-form input {
+        width: 120px;
+    }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    #main-header {
+        padding: 12px 18px;
+    }
+
+    #logo-image img {
+        width: 110px;
+    }
+
     #hero {
         flex-direction: column;
         min-height: 0;
@@ -1659,75 +2540,41 @@ body {
 
     #hero-info {
         width: 100%;
-        padding: 50px 30px;
+        padding: 35px 20px;
     }
 
     #hero-info h1 {
-        font-size: 55px;
+        font-size: 42px;
     }
 
     #hero-info h3 {
         padding-left: 0;
-        font-size: 14px;
-        letter-spacing: 6px;
+        font-size: 11px;
     }
 
     #hero-image {
         width: 100%;
-        height: 450px;
+        height: 300px;
     }
 
-    #hero-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /* Middle */
-    #middle {
-        flex-direction: column;
-    }
-
-    /* Artists */
     #artists-section {
         width: 100%;
-        padding: 30px;
-    }
-
-    #artists-section > a {
-        top: 40px;
-        right: 30px;
+        padding: 25px 20px;
     }
 
     #voice-cards {
-        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-
-    .voice-card {
-        width: 100%;
+        gap: 10px;
     }
 
     .voice-card img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
+        height: 200px;
     }
 
-    #voice-cards > a {
-        grid-column: 1 / -1;
-    }
-
-    /* The Sound */
     #the-sound {
         width: 100%;
-        padding: 30px;
-    }
-
-    #sound-top {
-        gap: 25px;
+        padding: 25px 20px;
     }
 
     #sound-info {
@@ -1738,199 +2585,400 @@ body {
         width: 40%;
     }
 
-    #album-cover-image img {
-        width: 100%;
-    }
-
-    #audio-player {
-        width: 100%;
-    }
-
-    #music-list {
-        width: 100%;
-    }
-
-    /* Gallery */
     #pictures {
         width: 100%;
-        padding: 35px 30px;
-        gap: 30px;
+        padding: 25px 20px;
     }
 
     #picture-gallery {
-        width: 50%;
+        width: 55%;
     }
 
     .polaroid {
         width: 40%;
-        margin: 0 auto;
     }
 
     .polaroid img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
+        height: 180px;
     }
 
-    /* Events */
     #events {
         flex-direction: column;
-        min-height: 0;
     }
 
-    #events-info {
+    #events-info, #plan {
         width: 100%;
-        padding: 35px 30px;
+        padding: 30px 20px;
     }
 
-    .event {
-        width: 100%;
-    }
-
-    #events-image {
-        width: 100%;
-        height: 400px;
-    }
-
-    #events-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /* Booking */
-    #plan {
-        width: 100%;
-        padding: 40px 30px;
-    }
-
-    #planning-image {
-        width: 100%;
-        height: 400px;
-    }
-
-    #planning-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /* Our Story */
     #story-preview {
         flex-direction: column;
-        min-height: 0;
     }
 
     #home-story-image {
         width: 100%;
-        height: 400px;
-    }
-
-    #home-story-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: 300px;
     }
 
     #home-story {
         width: 100%;
-        padding: 40px 30px;
+        padding: 30px 20px;
     }
-    
-    /* About Page */
+
     #about {
-        flex-direction: column;
-        min-height: 0;
+        min-height: 330px;
+        background-position: center;
     }
 
     #about-header {
         width: 100%;
-        padding: 50px 30px;
+        padding: 35px 20px;
     }
 
     #about-header h1 {
-        font-size: 55px;
+        font-size: 42px;
     }
 
     #about-header h1 span {
-        font-size: 32px;
+        font-size: 28px;
     }
 
-    #about-header h2 {
-        font-size: 16px;
-        letter-spacing: 3px;
-    }
-
-    #about-image {
-        width: 100%;
-        height: 400px;
-    }
-
-    #about-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /* Our Story */
     #story {
         flex-direction: column;
     }
 
-    #story #our-story {
-        order: 1;
+    #story-images, #our-story {
         width: 100%;
-        padding: 40px 30px;
     }
 
     #story-images {
-        order: 2;
-        width: 100%;
-        padding: 30px;
+        padding: 25px 20px;
     }
 
     #story-images img {
         width: 80%;
         height: auto;
-        max-height: 400px;
     }
 
-    #values-image {
+    #our-story {
+        padding: 30px 20px;
+    }
+
+    #vision {
+        min-height: 330px;
+        background-position: center;
+    }
+
+    #one-vision {
+        width: 100%;
+        min-height: 330px;
+        padding: 35px 20px;
+    }
+
+    #one-vision h1 {
+        font-size: 42px;
+    }
+
+    #voice {
+        padding: 25px 20px;
+    }
+
+    #voice h2 {
+        font-size: 34px;
+    }
+
+    #artists-links {
+        flex-wrap: wrap;
+    }
+
+    #voice-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .voice-cards {
         width: 100%;
     }
 
-    #values-image img {
-        width: 100%;
-        height: auto;
-        display: block;
+    .voice-cards img {
+        height: 220px;
     }
 
-    /* Footer */
+    #talent {
+        flex-direction: column;
+    }
+
+    #talents-image, #talent-info {
+        width: 100%;
+    }
+
+    #talents-image {
+        height: 300px;
+    }
+
+    #talent-info {
+        padding: 30px 20px;
+    }
+
+    #gallery {
+        padding: 30px 20px 15px;
+    }
+
+    #gallery-info h3 {
+        font-size: 36px;
+    }
+
+    #group {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 0 20px 30px;
+    }
+
+    #studio-image, #stage-image {
+        grid-column: span 1;
+        height: 230px;
+    }
+
+    #music-image, #together-image {
+        grid-column: span 1;
+        height: 210px;
+    }
+    
+    #outdoor-image {
+        grid-column: span 2;
+        height: 230px;
+    }
+
+    .gallery-caption p {
+        font-size: 9px;
+    }
+
+    #live {
+        height: 280px;
+        background-position: center;
+    }
+
+    #live-info {
+        width: 100%;
+        height: 280px;
+        padding: 30px 20px;
+    }
+
+    #live-info h1 {
+        font-size: 40px;
+    }
+
+    #tour {
+        flex-direction: column;
+    }
+
+    #tour-info,
+    #later {
+        width: 100%;
+    }
+
+    #tour-info {
+        padding: 30px 20px;
+    }
+
+    .tour {
+        flex-wrap: wrap;
+        gap: 6px;
+        padding: 10px 0;
+    }
+
+    .tour p:first-child {
+        width: 55px;
+    }
+
+    #year {
+        width: 45px;
+    }
+
+    .show-city {
+        width: 120px;
+    }
+
+    .tour p:nth-child(4) {
+        flex: 1;
+    }
+
+    .tour-time {
+        width: 60px;
+    }
+
+    .tour a {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    #view-galleryimage {
+        width: 100%;
+        height: 220px;
+    }
+
+    #later {
+        padding: 30px 20px;
+    }
+
+    #past-events {
+        width: 100%;
+        height: 220px;
+    }
+
+    #book {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    #book p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #music-hero {
+        min-height: 330px;
+        background-position: center;
+    }
+
+    #music-hero-text {
+        width: 100%;
+        min-height: 330px;
+        padding: 35px 20px;
+    }
+
+    #music-hero-text h2 {
+        font-size: 48px;
+    }
+
+    #featured-release {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    #featured-image, #featured-info {
+        width: 100%;
+    }
+
+    #featured-image img {
+        max-width: 300px;
+    }
+
+    #albums {
+        width: 100%;
+        float: none;
+        padding: 30px 20px;
+    }
+
+    #album-container {
+        gap: 8px;
+    }
+
+    .album {
+        width: 33.33%;
+    }
+
+    #release-archive {
+        width: 100%;
+        float: none;
+        min-height: 390px;
+        padding: 30px 20px;
+    }
+
+    #story-hero, #malik-hero, #aria-hero, #jordan-hero, #nia-hero {
+        min-height: 330px;
+        background-position: center;
+    }
+
+    #story-hero-info, #malik-hero-info, #aria-hero-info, #jordan-hero-info, #nia-hero-info {
+        width: 100%;
+        min-height: 330px;
+        padding: 35px 20px;
+    }
+
+    #story-hero-info h1 {
+        font-size: 45px;
+    }
+
+    #malik-hero-info h1, #aria-hero-info h1, #jordan-hero-info h1, #nia-hero-info h1 {
+        font-size: 52px;
+    }
+
+    #full-story, #malik-story, #aria-story, #jordan-story, #nia-story {
+        flex-direction: column;
+        padding: 35px 20px;
+        gap: 30px;
+    }
+
+    #story-polaroid, #malik-polaroid, #aria-polaroid, #jordan-polaroid, #nia-polaroid {
+        width: 85%;
+    }
+
+    #story-polaroid img, #malik-polaroid img, #aria-polaroid img,  #jordan-polaroid img, #nia-polaroid img {
+        height: 250px;
+    }
+
+    #story-text, #malik-info, #aria-info, #jordan-info, #nia-info {
+        width: 100%;
+    }
+
+    #story-text h2, #malik-info h2, #aria-info h2, #jordan-info h2, #nia-info h2 {
+        font-size: 36px;
+    }
+
+    #booking {
+        min-height: 330px;
+        background-position: center;
+    }
+
+    #booking-info {
+        width: 100%;
+        min-height: 330px;
+        padding: 35px 20px;
+    }
+
+    #booking-info h1 {
+        font-size: 45px;
+    }
+
+    #request {
+        flex-direction: column;
+        padding: 35px 20px;
+        gap: 30px;
+    }
+
+    #request-info, #request-form {
+        width: 100%;
+    }
+
+    #request-info h2 {
+        font-size: 34px;
+    }
+
     #footer {
         flex-direction: column;
         align-items: flex-start;
-        padding: 30px;
-        gap: 25px;
+        padding: 25px 20px;
+        gap: 20px;
     }
 
     #footer-logo-image {
-        width: 140px;
+        width: 120px;
     }
 
     #footer-links {
         width: 100%;
         justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 15px;
     }
 
     #newsletter {
         width: 100%;
         border-left: none;
         border-top: 1px solid var(--red);
-        padding: 25px 0 0;
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 20px 0 0;
     }
 
     #newsletter-form {
@@ -1944,5 +2992,12 @@ body {
 
     #footer > p {
         text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+
+    #albums, #release-archive {
+        min-height: 390px;
     }
 }
