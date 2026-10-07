@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UNISOGHN | Booking</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <div id="logo-image">
+                    <img src="images/UNISOGHN-LOGO.jpg" alt="UNISOGHN HEADER">
+                </div>
+                <button id="nav-toggle">☰</button>
+                <nav id="main-nav">
+                    <ul class="columns">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="artists.html">Artists</a></li>
+                    </ul>
+                </nav>
+                <div id="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </header>
+            <section id="booking">
+                <div id="booking-info">
+                    <h3>▶ BOOKING</h3>
+                    <h1>BRING THE<br>SOUND.</h1>
+                    <p>Interested in bringing UNISOGHN to your event?<br>Tell us about it and let's make it happen.</p>
+                </div>
+            </section>
+            <section id="request">
+                <div id="request-info">
+                    <h4>— GET IN TOUCH</h4>
+                    <h2>BOOK UNISOGHN</h2>
+                    <p> Ready to bring UNISOGHN to your event?<br>Send us your information and tell us a little<br>about what you're planning. </p>
+                    <p> Our team will review your request and<br>get back to you with more information.</p>
+                </div>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="da8a616d-e0ef-406c-8062-93e04f4002d7">                    <div class="input">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="event-type">EVENT TYPE</label>
+                        <input type="text" id="event-type" required>
+                    </div>
+                    <div class="input">
+                        <label for="event-date">EVENT DATE</label>
+                        <input type="date" id="event-date" required>
+                    </div>
+                    <div class="input">
+                        <label for="location">LOCATION</label>
+                        <input type="text" id="location" required>
+                    </div>
+                    <div class="input">
+                        <label for="details">EVENT DETAILS</label>
+                        <textarea id="details" rows="5" required></textarea>
+                    </div>
+                    <button id="send-request" type="submit">SEND REQUEST →</button>
+                </form>
+            </section>
+            <footer id="footer">
+                <div id="footer-logo-image">
+                    <img src="images/footerLOGOimage.jpg" alt="UNISOGHN LOGO">
+                </div>
+                <div id="footer-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Facebook</a>
+                </div>
+                <div id="newsletter">
+                    <div id="newsletter-info">
+                        <h4>▶ STAY CONNECTED</h4>
+                        <h2>NEWSLETTER</h2>
+                        <p>
+                            Get updates, new music,<br>and exclusive content.
+                        </p>
+                    </div>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your email address..." required>
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+                <p>
+                    &copy; 2026 UNISOGHN<br>ALL RIGHTS RESERVED
+                </p>
+            </footer>
+        </div>
+        <script src="scripts/intro.js"></script>
+    </body>
+</html>

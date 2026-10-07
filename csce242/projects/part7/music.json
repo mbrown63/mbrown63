@@ -1,0 +1,66 @@
+[
+    {
+        "_id": 1,
+        "img_name": "images/the-sound.jpg",
+        "title": "THE SOUND",
+        "type": "SINGLE",
+        "year": 2025,
+        "description": "The latest single from UNISOGHN."
+    },
+    {
+        "_id": 2,
+        "img_name": "images/more-than-music.jpg",
+        "title": "MORE THAN MUSIC",
+        "type": "ALBUM",
+        "year": 2024,
+        "description": "The Album that supported UNISOGHN."
+    },
+    {
+        "_id": 3,
+        "img_name": "images/UNISOGHN.jpg",
+        "title": "UNISOGHN",
+        "type": "EP",
+        "year": 2023,
+        "description": "A defining EP that introduces the unique style and identity of UNISOGHN."
+    },
+    {
+        "_id": 4,
+        "img_name": "images/fire-line.jpg",
+        "title": "FIRE LINE",
+        "type": "SINGLE",
+        "year": 2023,
+        "description": "An energetic single driven by bold sounds, emotion, and intensity."
+    },
+    {
+        "_id": 5,
+        "img_name": "images/LateNights.jpg",
+        "title": "LATE NIGHTS",
+        "type": "EP",
+        "year": 2021,
+        "description": "A late-night release filled with smooth sounds and reflective emotions."
+    },
+    {
+        "_id": 6,
+        "img_name": "images/ChasingMore.jpg",
+        "title": "CHASING MORE",
+        "type": "SINGLE",
+        "year": 2021,
+        "description": "A high-energy release about pushing forward and refusing to be held back."
+    },
+    {
+        "_id": 7,
+        "img_name": "images/DifferentWays.jpg",
+        "title": "DIFFERENT WAYS",
+        "type": "SINGLE",
+        "year": 2020,
+        "description": "A personal project exploring change, uncertainty, and finding your way."
+    },
+    {
+        "_id": 8,
+        "img_name": "images/TheBeginning.jpg",
+        "title": "THE BEGINNING",
+        "type": "EP",
+        "year": 2019,
+        "description": "An early release that represents where the UNISOGHN journey began."
+    }
+]
