@@ -1384,13 +1384,16 @@ body {
 /* Release Archive */
 #release-archive {
     width: 100%;
-    float: left;
     background-color: var(--light-cream);
     color: var(--black);
     padding: 25px 40px 35px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 30px;
 }
 
 #release-archive h2 {
+    grid-column: 1/-1; /* Start at the first grid line and stretch all the way to the last one. */
     font-family: Georgia, "Times New Roman", serif;
     font-size: 18px;
     margin: 0 0 20px;
@@ -1408,6 +1411,7 @@ body {
 }
 
 #release-archive .music-button {
+    grid-column: 1/-1;
     margin-top: 20px;
 }
 
