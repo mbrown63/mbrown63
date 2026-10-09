@@ -1339,12 +1339,12 @@ body {
 }
 
 #album-container {
-    display: flex;
+    display: grid;
     gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .album {
-    width: 33.33%;
     border: 1px solid #cdbba6;
     padding: 10px;
     display: flex;
@@ -2422,6 +2422,7 @@ body {
     }
 
     #album-container {
+        grid-template-columns: repeat(4,1fr);
         gap: 12px;
     }
 
@@ -2872,11 +2873,12 @@ body {
     }
 
     #album-container {
-        gap: 8px;
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .album {
-        width: 33.33%;
+        width: 100%;
     }
 
     #release-archive {
