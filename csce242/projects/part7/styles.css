@@ -1324,8 +1324,7 @@ body {
 
 /* Albums */
 #albums {
-    width: 72%;
-    float: left;
+    width: 100%;
     background-color: var(--light-cream);
     color: var(--black);
     padding: 25px 40px 35px 40px;
@@ -1383,12 +1382,11 @@ body {
 
 /* Release Archive */
 #release-archive {
-    width: 28%;
+    width: 100%;
     float: left;
     background-color: var(--light-cream);
     color: var(--black);
-    padding: 75px 35px 20px;
-    min-height: 485px;
+    padding: 25px 40px 35px;
 }
 
 #release-archive h2 {
