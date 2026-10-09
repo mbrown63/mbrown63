@@ -2078,7 +2078,7 @@ body {
     margin: 0 0 18px;
 }
 
-#request-form {
+#booking-form {
     width: 60%;
 }
 
@@ -2500,7 +2500,7 @@ body {
         width: 35%;
     }
 
-    #request-form {
+    #booking-form {
         width: 60%;
     }
 
@@ -2957,7 +2957,7 @@ body {
         gap: 30px;
     }
 
-    #request-info, #request-form {
+    #request-info, #booking-form {
         width: 100%;
     }
 
