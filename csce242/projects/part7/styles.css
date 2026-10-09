@@ -395,6 +395,18 @@ body {
     font-weight: bold;
 }
 
+/* PREVIEW PAGES */
+#preview-video {
+    width: 100%;
+}
+
+#preview-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /*Keeps the normal widescreen YouTube shape as the screen gets bigger or smaller.*/
+    height: auto;
+    display: block;
+}
+
 /* Events Preview */
 #events {
     display: flex;
